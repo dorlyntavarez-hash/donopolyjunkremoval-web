@@ -1,0 +1,927 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="light dark" />
+<meta name="description" content="Donopoly Junk Removal — junk removal, junk hauling, trash removal, debris removal, demolition, cleanouts, estate cleanouts, garage & basement cleanouts, furniture and appliance removal in Allentown PA, Lehigh Valley, Philadelphia, Scranton & Wilkes-Barre, Pennsylvania. Limpieza, recogida de basura, demolición y limpieza de casas. Free instant estimate · Cotización gratis. Call 484-879-9272." />
+<meta name="keywords" content="Donopoly Junk Removal, junk removal, junk hauling, trash removal, debris removal, demolition, cleanout, estate cleanout, garage cleanout, basement cleanout, furniture removal, appliance removal, limpieza, recogida de basura, demolición, limpieza de casas, Allentown PA, Lehigh Valley, Philadelphia, Scranton, Wilkes-Barre, Pennsylvania" />
+<link rel="icon" href="data:," />
+<title>Donopoly Junk Removal | Junk Removal, Cleanouts & Demolition — Allentown, Lehigh Valley, Philadelphia, Scranton, Wilkes-Barre PA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+:root{
+  --bg:#fff7e8; --surface:#ffffff; --surface2:#ffefd0; --ink:#1a1408; --ink2:#5c5138;
+  --line:#eed9a4; --brand:#d8232a; --brand2:#f5b301; --accent:#d8232a; --accent-ink:#fff;
+  --gold:#f5b301; --gold-soft:#ffc61a; --black:#141414; --ok:#1f9d3a; --chip:#fff1cd;
+  --shadow:0 10px 30px rgba(80,50,0,.15);
+  --radius:14px;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#16110a; --surface:#221a10; --surface2:#2c2113; --ink:#fdf6e0; --ink2:#cdbd97;
+    --line:#4d3d1e; --brand:#ff5040; --brand2:#ffc61a; --accent:#ff5040; --gold:#ffc61a;
+    --gold-soft:#ffd23e; --chip:#2c2113;
+    --shadow:0 10px 30px rgba(0,0,0,.5); }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Barlow",system-ui,sans-serif;font-size:17px;line-height:1.5}
+h1,h2,h3,.cond{font-family:"Barlow Condensed","Barlow",sans-serif;letter-spacing:.01em}
+img{max-width:100%;display:block}
+a{color:var(--brand)}
+button,[role="button"],select,summary,input:not([type="checkbox"]){min-height:2.25rem}
+.wrap{max-width:1120px;margin:0 auto;padding:0 18px}
+/* top bar */
+.topbar{position:sticky;top:0;z-index:50;background:var(--black);color:#fff;box-shadow:var(--shadow);border-bottom:4px solid var(--gold)}
+.topbar .wrap{display:flex;align-items:center;gap:10px;padding-top:8px;padding-bottom:8px;flex-wrap:wrap}
+.brandname{font-family:"Barlow Condensed";font-weight:700;font-size:1.45rem;line-height:1;color:#fff;text-decoration:none;display:inline-flex;align-items:center;gap:10px}
+.brandname span{color:var(--gold)}
+.brandlogo{width:44px;height:44px;border-radius:50%;object-fit:cover;border:2px solid var(--gold);flex:none;background:#fff}
+.topbar nav{margin-left:auto;display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.topbar nav a{color:#fff;text-decoration:none;font-weight:600;padding:8px 10px;border-radius:8px;font-size:.98rem}
+.topbar nav a:hover{background:rgba(255,255,255,.14)}
+.langbtn{background:var(--gold);color:#141414;border:0;border-radius:999px;font-weight:700;padding:5px 7px;cursor:pointer;font-size:.92rem;display:inline-flex;gap:2px;align-items:center}
+.langbtn .flag{opacity:.5;padding:3px 8px;border-radius:999px;line-height:1}
+.langbtn .flag.on{opacity:1;background:#141414;color:#fff}
+.topcontact{display:inline-flex;align-items:center;gap:7px}
+.topnum{color:#fff !important;font-weight:700;text-decoration:none;font-size:1.08rem;padding:6px 2px !important}
+.iconbtn{width:40px;height:40px;border-radius:50% !important;padding:0 !important;display:inline-flex;align-items:center;justify-content:center;background:var(--brand);color:#fff;text-decoration:none;flex:none}
+.iconbtn.wa{background:#1fae4e}
+.iconbtn svg{width:20px;height:20px}
+/* hero */
+.hero{position:relative;color:#fff;border-bottom:5px solid var(--gold)}
+.hero>img{width:100%;height:620px;object-fit:cover;object-position:center 62%}
+.hero .shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(12,9,3,.9) 0%,rgba(12,9,3,.68) 55%,rgba(12,9,3,.22) 100%)}
+.hero .inner{position:absolute;inset:0;display:flex;align-items:center}
+.hero-logo{width:min(225px,58vw);margin:0 0 16px}
+.hero-logo img{width:100%;height:auto;border-radius:50%;border:5px solid var(--gold);background:#fff;box-shadow:0 14px 34px rgba(0,0,0,.45)}
+.hero h1{font-size:clamp(2.4rem,6vw,4.2rem);line-height:.98;margin:0 0 10px;text-transform:uppercase;font-weight:700}
+.hero h1 em{font-style:normal;color:var(--gold-soft)}
+.hero p{max-width:560px;font-size:1.15rem;margin:0 0 20px;color:#fdf3da}
+.hero .ctas{display:flex;gap:8px;flex-wrap:wrap;max-width:660px}
+.hero .ctas .btn{flex:1 1 150px;justify-content:center;text-align:center;padding:11px 14px;font-size:1rem;min-height:46px}
+.btn{display:inline-flex;align-items:center;gap:8px;border:0;border-radius:999px;padding:13px 22px;font-weight:700;font-size:1.05rem;text-decoration:none;cursor:pointer;min-height:48px}
+.btn-accent{background:var(--accent);color:#fff}
+.btn-gold{background:var(--gold);color:#141414}
+.btn-wa{background:#1fae4e;color:#fff}
+.btn-ghost{background:rgba(255,255,255,.12);color:#fff;border:1.5px solid rgba(255,255,255,.65)}
+.btn-brand{background:var(--brand);color:#fff}
+.btn-line{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
+.hero .areas{margin-top:18px;font-weight:600;color:#ffe9a8;font-size:.98rem}
+/* sections */
+section{padding:38px 0 4px}
+h2{font-size:clamp(1.9rem,4vw,2.6rem);text-transform:uppercase;margin:0 0 6px;line-height:1.05}
+h2::after{content:"";display:block;width:64px;height:5px;border-radius:3px;background:var(--gold);margin-top:8px}
+.sub{color:var(--ink2);max-width:680px;margin:0 0 24px}
+.grid{display:grid;gap:18px}
+.grid3{grid-template-columns:repeat(3,1fr)}
+.grid2{grid-template-columns:repeat(2,1fr)}
+@media(max-width:820px){.grid3,.grid2{grid-template-columns:1fr}.hero>img{height:680px}.hero-logo{width:150px}}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+.card img{height:190px;width:100%;object-fit:cover}
+.card .pad{padding:18px}
+.card h3{font-size:1.45rem;margin:0 0 6px;text-transform:uppercase}
+.card p{margin:0;color:var(--ink2)}
+.svc{padding:20px}
+.svc h3{font-size:1.4rem;margin:0 0 6px;text-transform:uppercase}
+.svc p{margin:0;color:var(--ink2)}
+.svc .tag{display:inline-block;background:var(--chip);border:1px solid var(--line);border-radius:999px;padding:3px 10px;font-size:.85rem;font-weight:600;margin-bottom:10px}
+/* prices */
+table{width:100%;border-collapse:collapse;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+th,td{padding:13px 16px;text-align:left;border-bottom:1px solid var(--line)}
+th{background:var(--brand);color:#fff;font-family:"Barlow Condensed";font-size:1.1rem;letter-spacing:.03em;text-transform:uppercase}
+tr:last-child td{border-bottom:0}
+td.price{font-weight:700;white-space:nowrap;color:var(--brand)}
+@media (prefers-color-scheme: dark){td.price{color:var(--gold)}}
+/* estimator */
+.est{background:var(--surface);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);padding:22px}
+.steps{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+.step{font-weight:700;font-size:.92rem;background:var(--chip);border:1px solid var(--line);padding:6px 12px;border-radius:999px;color:var(--ink2)}
+.step.on{background:var(--brand);color:#fff;border-color:var(--brand)}
+label.flabel{display:block;font-weight:700;margin:18px 0 8px;font-size:1.02rem}
+label.flabel:first-of-type{margin-top:0}
+.hint{font-weight:400;color:var(--ink2);font-size:.92rem}
+.chips{display:grid;gap:8px}
+#matChips{grid-template-columns:repeat(5,1fr)}
+#sizeChips{grid-template-columns:repeat(5,1fr)}
+@media(max-width:900px){#matChips{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:560px){#matChips{grid-template-columns:repeat(2,1fr)}#sizeChips{grid-template-columns:repeat(3,1fr)}}
+.chip{border:2px solid var(--line);background:var(--surface);color:var(--ink);border-radius:10px;padding:8px 6px;font-weight:600;cursor:pointer;font-size:.93rem;min-height:44px;width:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;text-align:center;line-height:1.25}
+.chip[aria-pressed="true"]{border-color:var(--brand);background:var(--brand);color:#fff;box-shadow:0 4px 14px rgba(216,35,42,.4)}
+.chip small{display:block;font-weight:500;font-size:.76rem;opacity:.85}
+/* truck fill meter — slim bar */
+.meter{margin-top:14px;background:var(--surface2);border:1px solid var(--line);border-radius:10px;padding:9px 14px 8px}
+.meter-head{display:flex;justify-content:space-between;align-items:baseline;font-weight:700;font-size:.92rem}
+.meter-pct{font-family:"Barlow Condensed";font-size:1.15rem;color:var(--brand)}
+@media (prefers-color-scheme: dark){.meter-pct{color:var(--gold)}}
+.meter-track{position:relative;height:14px;background:var(--surface);border:2px solid var(--ink);border-radius:999px;overflow:hidden;margin-top:5px}
+.meter-fill{height:100%;width:0;background:linear-gradient(90deg,var(--gold) 0%,var(--gold-soft) 55%,var(--brand) 130%);transition:width .55s ease}
+.meter-tick{position:absolute;top:0;bottom:0;width:2px;background:color-mix(in srgb,var(--ink) 28%,transparent);pointer-events:none}
+.meter-scale{display:flex;justify-content:space-between;font-size:.78rem;font-weight:600;color:var(--ink2);margin-top:3px}
+.meter-cap{margin-top:5px;font-weight:700;font-size:.95rem}
+@media (prefers-reduced-motion: reduce){.meter-fill{transition:none}}
+.modes{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:560px){.modes{grid-template-columns:1fr}}
+.mode{border:2px solid var(--line);border-radius:12px;padding:14px;cursor:pointer;background:var(--surface);text-align:left;color:var(--ink);min-height:48px}
+.mode[aria-pressed="true"]{border-color:var(--accent);background:color-mix(in srgb,var(--accent) 10%,var(--surface))}
+.mode b{display:block;font-size:1.05rem}
+.mode span{color:var(--ink2);font-size:.92rem}
+.items{display:grid;gap:10px}
+.itemrow{display:flex;align-items:center;gap:12px;border:1px solid var(--line);border-radius:12px;padding:10px 14px;background:var(--surface)}
+.itemrow .nm{flex:1;font-weight:600}
+.itemrow .pr{font-weight:700;color:var(--brand)}
+@media (prefers-color-scheme: dark){.itemrow .pr{color:var(--gold)}}
+.counter{display:flex;align-items:center;gap:8px}
+.counter button{width:44px;height:44px;border-radius:50%;border:2px solid var(--brand);background:transparent;color:var(--brand);font-size:1.3rem;font-weight:700;cursor:pointer;line-height:1}
+.counter output{min-width:28px;text-align:center;font-weight:700;font-size:1.1rem}
+textarea,input[type="text"],input[type="tel"],input[type="email"],input[type="date"],input[type="time"],select{width:100%;border:1.5px solid var(--line);border-radius:10px;padding:11px 12px;font:inherit;background:var(--surface);color:var(--ink)}
+textarea{min-height:84px;resize:vertical}
+.descwrap{position:relative}
+.micbtn{position:absolute;right:8px;bottom:8px;width:40px;height:40px;border-radius:50%;border:0;background:var(--brand);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.micbtn.rec{background:#c62f1d;animation:pulse 1s infinite}
+@keyframes pulse{50%{opacity:.6}}
+@media (prefers-reduced-motion: reduce){.micbtn.rec{animation:none} html{scroll-behavior:auto}}
+.upload{border:2.5px dashed var(--brand);border-radius:14px;padding:22px 18px;text-align:center;background:var(--surface2)}
+.upload input{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);border:0;white-space:nowrap}
+.upload-btn{display:inline-flex;align-items:center;gap:10px;margin-top:14px;background:linear-gradient(135deg,var(--brand) 0%,#b81c22 55%,var(--black) 130%);color:#fff;border:3px solid var(--gold);border-radius:999px;padding:16px 28px;font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:1.35rem;letter-spacing:.03em;text-transform:uppercase;cursor:pointer;min-height:56px;box-shadow:0 8px 22px rgba(216,35,42,.38),0 0 0 4px rgba(245,179,1,.22);transition:transform .15s ease,box-shadow .15s ease}
+.upload-btn:hover{transform:translateY(-1px);box-shadow:0 12px 26px rgba(216,35,42,.45),0 0 0 5px rgba(245,179,1,.3)}
+.upload-btn:active{transform:translateY(0)}
+.upload-btn .ub-ico{font-size:1.5rem;line-height:1}
+.upload-count{margin-top:10px;font-weight:700;color:var(--brand);font-size:.95rem}
+@media (prefers-color-scheme: dark){.upload-count{color:var(--gold)}}
+@media (prefers-reduced-motion: reduce){.upload-btn{transition:none}}
+.combine-note{display:flex;gap:10px;align-items:flex-start;background:color-mix(in srgb,var(--gold) 16%,var(--surface));border:1.5px solid var(--gold);border-radius:12px;padding:13px 15px;margin-top:18px;font-weight:600}
+.combine-note span{font-size:1.25rem;line-height:1.2}
+.items-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.itemrow{flex-wrap:wrap}
+.itemrow .counter{margin-left:auto}
+.items-toggle{width:100%;display:flex;align-items:center;gap:10px;text-align:left;background:var(--chip);border:2px solid var(--brand);border-radius:12px;padding:12px 14px;font:inherit;font-weight:700;cursor:pointer;color:var(--ink);margin:18px 0 6px;line-height:1.3}
+.items-toggle .hint{font-weight:400}
+.items-toggle .chev{margin-left:auto;flex:none;font-size:1.35rem;line-height:1;color:var(--brand);transition:transform .2s ease}
+.items-toggle.open .chev{transform:rotate(180deg)}
+@media (prefers-reduced-motion: reduce){.items-toggle .chev{transition:none}}
+@media(max-width:560px){.itemrow{padding:8px 9px;gap:6px}.itemrow .nm{font-size:.92rem}.itemrow .pr{font-size:.95rem}.counter{gap:5px}.counter button{width:36px;height:36px;font-size:1.1rem}.counter output{min-width:20px;font-size:1rem}}
+.items-sub{font-family:"Barlow Condensed";font-size:1.15rem;text-transform:uppercase;letter-spacing:.03em;margin:16px 0 4px;color:var(--brand)}
+@media (prefers-color-scheme: dark){.items-sub{color:var(--gold)}}
+.thumbs{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.thumbs img,.thumbs video{width:84px;height:84px;object-fit:cover;border-radius:10px;border:1px solid var(--line)}
+.invoice{border:2px solid var(--brand);border-radius:14px;padding:20px;background:var(--surface);margin-top:20px}
+.invoice h3{margin:0 0 4px;font-size:1.5rem;text-transform:uppercase}
+.inv-head{display:flex;justify-content:space-between;align-items:flex-start;gap:14px}
+.inv-logo{width:74px;height:74px;border-radius:50%;object-fit:cover;border:2.5px solid var(--gold);background:#fff;flex:none}
+.inv-no{font-weight:700;font-size:1.08rem;color:var(--brand);margin:0 0 2px}
+@media (prefers-color-scheme: dark){.inv-no{color:var(--gold)}}
+.invoice .row{display:flex;justify-content:space-between;gap:14px;padding:7px 0;border-bottom:1px dashed var(--line)}
+.invoice .row span:last-child{font-weight:600;white-space:nowrap}
+.invoice .total{display:flex;justify-content:space-between;font-size:1.35rem;font-weight:700;padding-top:12px;color:var(--brand)}
+@media (prefers-color-scheme: dark){.invoice .total{color:var(--gold)}}
+.note{font-size:.92rem;color:var(--ink2);background:var(--surface2);border-radius:10px;padding:12px 14px;margin-top:14px}
+.est-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.btn-sm{padding:9px 14px;font-size:.94rem;min-height:42px;border-radius:10px;gap:6px}
+.sendrow{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.sendrow .btn.picked{box-shadow:0 0 0 3px var(--gold)}
+.acceptbtn{width:100%;justify-content:center;font-size:1.08rem}
+.acceptbtn.done{background:var(--ok)}
+.radios{display:flex;gap:10px;flex-wrap:wrap}
+.radios label{display:inline-flex;gap:8px;align-items:center;border:1.5px solid var(--line);border-radius:999px;padding:10px 16px;cursor:pointer;font-weight:600;min-height:48px}
+.radios input{width:20px;height:20px;accent-color:var(--brand)}
+.err{color:#c62f1d;font-weight:600;display:none;margin-top:8px}
+/* map */
+.mapbox{background:var(--surface);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);padding:10px}
+.arealist{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:560px){.arealist{grid-template-columns:1fr}}
+.arealist a{display:block;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px;text-decoration:none;color:var(--ink);font-weight:700;font-size:1.1rem}
+.arealist a span{display:block;font-weight:400;color:var(--ink2);font-size:.95rem}
+/* social / share */
+.socials{display:flex;gap:10px;flex-wrap:wrap}
+.socials a,.share a,.share button{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:11px 18px;font-weight:700;text-decoration:none;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer;font-size:1rem;min-height:48px}
+.share{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+/* fixed top banner — always complete, never cropped */
+.fixedbanner{background:#0b0b0b;border-bottom:4px solid var(--gold)}
+.fixedbanner img{width:100%;height:auto;max-height:430px;object-fit:contain;margin:0 auto}
+/* contact icon row — compact round symbol buttons */
+.netrow{display:flex;gap:10px;flex-wrap:wrap}
+.netbtn{width:52px;height:52px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;color:#fff;text-decoration:none;box-shadow:var(--shadow);flex:none}
+.netbtn svg{width:26px;height:26px}
+.nb-tel{background:var(--brand)}
+.nb-mail{background:var(--gold);color:#141414}
+.nb-wa{background:#1fae4e}
+.nb-fb{background:#1877f2}
+.nb-ig{background:#d62976}
+.nb-tt{background:#141414}
+.nb-yt{background:#e62117}
+/* contact — big labeled buttons, every one shows what it does and where it goes */
+.contactgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:560px){.contactgrid{grid-template-columns:1fr}}
+.cbtn{display:flex;align-items:center;gap:12px;background:var(--surface);border:1.5px solid var(--line);border-radius:14px;padding:12px 14px;text-decoration:none;color:var(--ink);box-shadow:var(--shadow);min-height:62px}
+a.cbtn:active{transform:scale(.99)}
+.cbtn .cic{width:44px;height:44px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;color:#fff;flex:none}
+.cbtn .cic svg{width:22px;height:22px}
+.cbtn .ctx{display:flex;flex-direction:column;line-height:1.25;min-width:0}
+.cbtn .ctx b{font-size:1.02rem;word-break:break-all}
+.cbtn .ctx span{color:var(--ink2);font-size:.88rem;font-weight:600}
+.cbtn .cacts{margin-left:auto;display:flex;gap:6px;flex:none}
+.mini{display:inline-flex;align-items:center;border-radius:999px;padding:8px 13px;font-weight:700;font-size:.86rem;text-decoration:none;border:1.5px solid var(--line);background:var(--surface2);color:var(--ink);cursor:pointer;min-height:40px;font-family:inherit}
+.mini.gold{background:var(--gold);border-color:var(--gold);color:#141414}
+/* rotating video banner */
+.vidbanner{position:relative;max-width:290px;margin:0 auto}
+.vidstage{position:relative;aspect-ratio:9/16;max-height:470px;background:#000;border-radius:16px;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line)}
+.vidslide{position:absolute;inset:0;animation:vidfade .5s ease}
+@keyframes vidfade{from{opacity:0}to{opacity:1}}
+.vidslide img{width:100%;height:100%;object-fit:cover}
+.vidslide video{width:100%;height:100%;object-fit:cover;display:block;background:#000}
+.vidplay{position:absolute;inset:0;width:100%;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.22);border:0;cursor:pointer}
+.vidplay span{width:58px;height:58px;border-radius:50%;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px rgba(0,0,0,.45)}
+.vidplay svg{width:24px;height:24px;margin-left:4px}
+.vidtag{position:absolute;left:10px;bottom:10px;background:rgba(0,0,0,.65);color:#fff;font-weight:600;font-size:.85rem;padding:4px 10px;border-radius:999px}
+.vidnav{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;border:0;background:rgba(20,20,20,.55);color:#fff;font-size:1.6rem;cursor:pointer;line-height:1;z-index:3}
+.vidnav.prev{left:-8px}
+.vidnav.next{right:-8px}
+@media(max-width:480px){.vidnav.prev{left:4px}.vidnav.next{right:4px}}
+.viddots{display:flex;gap:7px;justify-content:center;margin-top:12px}
+.viddots button{width:11px;height:11px;min-height:0;border-radius:50%;border:0;background:var(--line);cursor:pointer;padding:0}
+.viddots button.on{background:var(--brand)}
+@media (prefers-reduced-motion: reduce){.vidslide{animation:none}}
+footer{background:var(--black);color:#eadfc2;margin-top:56px;padding:34px 0 90px;border-top:5px solid var(--gold)}
+footer a{color:var(--gold-soft)}
+footer .cols{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media(max-width:820px){footer .cols{grid-template-columns:1fr}}
+footer h3{color:#fff;margin:0 0 8px;text-transform:uppercase}
+.stickybar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:flex;gap:8px;padding:10px;background:color-mix(in srgb,var(--surface) 92%,transparent);backdrop-filter:blur(6px);border-top:1px solid var(--line)}
+.stickybar a{flex:1;text-align:center}
+@media(min-width:821px){.stickybar{display:none} footer{padding-bottom:34px}}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:86px;background:var(--ink);color:var(--bg);padding:12px 18px;border-radius:999px;font-weight:600;z-index:70;display:none;box-shadow:var(--shadow)}
+@media print{ .topbar,.stickybar,.no-print{display:none!important} body{background:#fff} }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brandname" href="#top"><img class="brandlogo" src="assets/logo.jpg" alt="Donopoly Junk Removal logo" />DONOPOLY <span>JUNK REMOVAL</span></a>
+    <nav>
+      <a href="#services" data-i18n="nav_services">Services</a>
+      <a href="#prices" data-i18n="nav_prices">Prices</a>
+      <a href="#estimate" data-i18n="nav_estimate">Get an estimate</a>
+      <a href="#areas" data-i18n="nav_areas">Areas</a>
+      <span class="topcontact">
+        <a class="topnum" href="tel:+14848799272">484-879-9272</a>
+        <a class="iconbtn" href="tel:+14848799272" aria-label="Call Donopoly / Llamar a Donopoly"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg></a>
+        <a class="iconbtn wa" href="https://wa.me/14848799272" target="_blank" rel="noopener" aria-label="WhatsApp Donopoly"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11.9 11.9 0 0 0 12.1 0C5.5 0 .1 5.4.1 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6a11.9 11.9 0 0 0 5.9 1.5c6.6 0 12-5.4 12-12 0-3.2-1.3-6.2-3.6-8.4zM12.1 21.8a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.3-.4a9.8 9.8 0 1 1 8.4 4.6zm5.4-7.4c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.7-2.1c-.2-.3 0-.5.1-.6l.5-.6c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-1-2.3c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.3-.6-.4z"/></svg></a>
+      </span>
+      <button class="langbtn" id="langBtn" type="button" aria-label="Cambiar idioma / Switch language"><span class="flag on" data-f="en">🇺🇸 EN</span><span class="flag" data-f="es">🇪🇸 ES</span></button>
+    </nav>
+  </div>
+</header>
+
+<div class="fixedbanner">
+  <img src="assets/banner.jpg" alt="Donopoly Junk Removal banner — Dorlyn with the company logo and loaded trailer: furniture removal, appliance removal, construction debris, yard waste, cleanouts &amp; more. Call or text today (484) 879-9272" />
+</div>
+
+<div class="hero" id="top">
+  <img src="assets/truck.jpg" alt="Dorlyn's white Donopoly Junk Removal dump truck with the company logo and phone number 484-879-9272 on the door" />
+  <div class="shade"></div>
+  <div class="inner"><div class="wrap" style="width:100%">
+    <div class="hero-logo"><img src="assets/logo.jpg" alt="Donopoly Junk Removal logo — Dorlyn with his crown, truck and trailer: furniture removal, appliance removal, construction debris, yard waste, cleanouts and more" /></div>
+    <h1 data-i18n="hero_h">You point. <em>We haul it all.</em></h1>
+    <p data-i18n="hero_p">Junk removal, full-property cleanouts and demolition debris hauling for homes and businesses. Up-front range pricing, fast scheduling, and a crew that does the heavy lifting for you.</p>
+    <div class="ctas">
+      <a class="btn btn-gold" href="#estimate" data-i18n="hero_cta1">Get my free estimate</a>
+      <a class="btn btn-wa" href="https://wa.me/14848799272?text=Hi%20Donopoly!%20I%20need%20junk%20removal." target="_blank" rel="noopener" data-i18n="hero_cta2">WhatsApp us</a>
+      <a class="btn btn-ghost" href="tel:+14848799272" data-i18n="hero_cta3">Call 484-879-9272</a>
+    </div>
+    <div class="areas" data-i18n="hero_areas">Lehigh Valley · Philadelphia · Scranton · Wilkes-Barre — and surrounding areas</div>
+  </div></div>
+</div>
+
+<main class="wrap">
+
+<section id="services">
+  <h2 data-i18n="svc_h">What we haul</h2>
+  <p class="sub" data-i18n="svc_p">Any type of junk and demolition debris, for individuals and companies. We load it, haul it and dispose of it properly — you don't lift a thing.</p>
+  <div class="grid grid3">
+    <article class="card"><img src="assets/furniture.jpg" alt="Workers carrying a sofa out of a house for removal" /><div class="pad">
+      <h3 data-i18n="svc1_h">Furniture &amp; appliances</h3>
+      <p data-i18n="svc1_p">Sofas, mattresses, tables, refrigerators, stoves, washers and more — single items or whole rooms.</p></div></article>
+    <article class="card"><img src="assets/cleanout.jpg" alt="Before and after of a yard fully cleared of junk and debris" /><div class="pad">
+      <h3 data-i18n="svc2_h">Cleanouts</h3>
+      <p data-i18n="svc2_p">Garages, basements, move-outs and full-property cleanouts, left broom-clean and ready for what's next.</p></div></article>
+    <article class="card"><img src="assets/demolition.jpg" alt="Demolition site with debris piles and heavy equipment" /><div class="pad">
+      <h3 data-i18n="svc3_h">Demolition &amp; debris</h3>
+      <p data-i18n="svc3_p">We do the demolition when needed and haul concrete, dirt, drywall, scrap and construction debris. Demolition is quoted in person.</p></div></article>
+  </div>
+  <div class="grid grid3" style="margin-top:18px">
+    <div class="card svc"><span class="tag" data-i18n="svc4_t">Yard</span><h3 data-i18n="svc4_h">Leaves &amp; yard waste</h3><p data-i18n="svc4_p">Leaf pickup, branches and yard debris — our lowest base price.</p></div>
+    <div class="card svc"><span class="tag" data-i18n="svc5_t">Heavy</span><h3 data-i18n="svc5_h">Concrete, dirt &amp; scrap</h3><p data-i18n="svc5_p">Heavy materials priced by weight and disposal cost — select them in the estimator.</p></div>
+    <div class="card svc"><span class="tag" data-i18n="svc6_t">Business</span><h3 data-i18n="svc6_h">Commercial jobs</h3><p data-i18n="svc6_p">Offices, rentals, warehouses and job sites. One call, one crew, done.</p></div>
+  </div>
+</section>
+
+<section id="videos">
+  <h2 data-i18n="vid_h">Watch us in action</h2>
+  <p class="sub" data-i18n="vid_p">Real Donopoly videos — our truck and crew on the job. New videos are added here as we publish them.</p>
+  <div class="vidbanner">
+    <div class="vidstage" id="vidStage"></div>
+    <button type="button" class="vidnav prev" id="vidPrev" aria-label="Previous video / Video anterior">‹</button>
+    <button type="button" class="vidnav next" id="vidNext" aria-label="Next video / Video siguiente">›</button>
+    <div class="viddots" id="vidDots"></div>
+  </div>
+  <p style="text-align:center;margin-top:14px"><a class="btn btn-sm btn-line" href="https://www.youtube.com/@DonopolyJunkRemoval" target="_blank" rel="noopener" data-i18n="vid_more">More videos on YouTube · @DonopolyJunkRemoval</a></p>
+</section>
+
+<section id="prices">
+  <h2 data-i18n="pr_h">Honest range pricing</h2>
+  <p class="sub" data-i18n="pr_p">Every load is priced as an estimated range, because the final price depends on the material and weight once we see it. Even a small load is never $0 — it covers the crew's time and fuel.</p>
+  <table>
+    <tr><th data-i18n="pr_c1">Load size</th><th data-i18n="pr_c2">Estimated range</th></tr>
+    <tr><td data-i18n="pr_r1">Small load</td><td class="price">$49 – $100</td></tr>
+    <tr><td data-i18n="pr_r2">¼ truck</td><td class="price">$120 – $180</td></tr>
+    <tr><td data-i18n="pr_r3">½ truck</td><td class="price">$280 – $380</td></tr>
+    <tr><td data-i18n="pr_r4">¾ truck</td><td class="price">$430 – $550</td></tr>
+    <tr><td data-i18n="pr_r5">Full truck</td><td class="price">$530 – $700</td></tr>
+  </table>
+  <p class="note" data-i18n="pr_note">Single loose items are priced per item with no general base fee — for example: refrigerator $45 · stove $35 · microwave $15. The per-item price already includes the disposal, handling, fuel and time.</p>
+</section>
+
+<section id="estimate">
+  <h2 data-i18n="est_h">Instant estimate</h2>
+  <p class="sub" data-i18n="est_p">Build your estimate in under a minute. Add photos or a video, tap what you're getting rid of, and see a detailed, invoice-style estimate right away.</p>
+
+  <div class="est" id="estBox">
+    <div class="steps no-print">
+      <span class="step on" data-i18n="st1">1 · What goes</span>
+      <span class="step" data-i18n="st2">2 · Photos &amp; details</span>
+      <span class="step" data-i18n="st3">3 · Your info</span>
+      <span class="step" data-i18n="st4">4 · Get your receipt</span>
+    </div>
+
+    <div class="combine-note no-print"><span aria-hidden="true">🧩</span><div data-i18n="combine_note">Two ways, ONE estimate: price a truck load <b>and</b> add single items on top — or single items alone, with <b>no base fee</b>.</div></div>
+
+    <div id="loadBlock">
+      <label class="flabel" data-i18n="load_h">Option A · By truck load</label>
+      <label class="flabel" data-i18n="mat_l">Type of material <span class="hint" data-i18n="mat_h">— tap all that apply; scrap, dirt, debris &amp; trash can be combined</span></label>
+      <div class="chips" id="matChips">
+        <button type="button" class="chip" data-mat="furniture" aria-pressed="false"><span data-i18n="m_furn">Furniture &amp; loose items</span><small>$89–$140 base</small></button>
+        <button type="button" class="chip" data-mat="garage" aria-pressed="false"><span data-i18n="m_gar">Garage / basement</span><small>$149–$220 base</small></button>
+        <button type="button" class="chip" data-mat="trash" aria-pressed="false"><span data-i18n="m_trash">General trash</span></button>
+        <button type="button" class="chip" data-mat="debris" aria-pressed="false"><span data-i18n="m_deb">Debris / drywall</span></button>
+        <button type="button" class="chip" data-mat="leaves" aria-pressed="false"><span data-i18n="m_leaf">Leaves &amp; yard waste</span></button>
+        <button type="button" class="chip" data-mat="concrete" aria-pressed="false"><span data-i18n="m_conc">Concrete</span><small data-i18n="heavy">heavy</small></button>
+        <button type="button" class="chip" data-mat="dirt" aria-pressed="false"><span data-i18n="m_dirt">Dirt</span><small data-i18n="heavy2">heavy</small></button>
+        <button type="button" class="chip" data-mat="scrap" aria-pressed="false"><span data-i18n="m_scrap">Scrap metal</span></button>
+        <button type="button" class="chip" data-mat="cleanout" aria-pressed="false"><span data-i18n="m_clean">Full cleanout / move-out</span></button>
+        <button type="button" class="chip" data-mat="demo" aria-pressed="false"><span data-i18n="m_demo">Demolition</span><small data-i18n="demo_s">quoted in person</small></button>
+      </div>
+
+      <label class="flabel" data-i18n="size_l">How much of the truck?</label>
+      <div class="chips" id="sizeChips">
+        <button type="button" class="chip" data-size="small" aria-pressed="false"><span data-i18n="s_small">Small load</span><small>$49–$100</small></button>
+        <button type="button" class="chip" data-size="q1" aria-pressed="false"><span data-i18n="s_q1">¼ truck</span><small>$120–$180</small></button>
+        <button type="button" class="chip" data-size="half" aria-pressed="false"><span data-i18n="s_half">½ truck</span><small>$280–$380</small></button>
+        <button type="button" class="chip" data-size="q3" aria-pressed="false"><span data-i18n="s_q3">¾ truck</span><small>$430–$550</small></button>
+        <button type="button" class="chip" data-size="full" aria-pressed="false"><span data-i18n="s_full">Full truck</span><small>$530–$700</small></button>
+      </div>
+
+      <div class="meter no-print">
+        <div class="meter-head"><span data-i18n="meter_l">How full is the truck?</span><span class="meter-pct" id="meterPct">0%</span></div>
+        <div class="meter-track" role="img" aria-label="Truck load fill level">
+          <div class="meter-fill" id="meterFill"></div>
+          <span class="meter-tick" style="left:25%"></span>
+          <span class="meter-tick" style="left:50%"></span>
+          <span class="meter-tick" style="left:75%"></span>
+        </div>
+        <div class="meter-scale"><span data-i18n="mtr_0">Small</span><span>¼</span><span>½</span><span>¾</span><span data-i18n="mtr_4">Full</span></div>
+        <div class="meter-cap" id="meterCap" data-i18n="meter_pick">Pick a load size above and watch the truck fill up.</div>
+      </div>
+    </div>
+
+    <div id="itemsBlock">
+      <button type="button" class="items-toggle" id="itemsToggle" aria-expanded="false" aria-controls="itemsPanel"><span><span data-i18n="items_l">Option B · Single items — alone or on top of a load</span> <span class="hint" data-i18n="items_h">— no base fee when they're alone; tap + for each one</span><br/><span class="hint" data-i18n="items_open">Tap to open or close the list</span></span><span class="chev" aria-hidden="true">▾</span></button>
+
+      <div id="itemsPanel" hidden>
+      <div class="items-sub" data-i18n="items_appl">Appliances</div>
+      <div class="items items-grid">
+        <div class="itemrow"><span class="nm" data-i18n="it_fridge">Refrigerator</span><span class="pr">$45</span>
+          <span class="counter"><button type="button" data-item="fridge" data-d="-1" aria-label="−">−</button><output id="c_fridge">0</output><button type="button" data-item="fridge" data-d="1" aria-label="+">+</button></span></div>
+        <div class="itemrow"><span class="nm" data-i18n="it_stove">Stove / range</span><span class="pr">$35</span>
+          <span class="counter"><button type="button" data-item="stove" data-d="-1" aria-label="−">−</button><output id="c_stove">0</output><button type="button" data-item="stove" data-d="1" aria-label="+">+</button></span></div>
+        <div class="itemrow"><span class="nm" data-i18n="it_micro">Microwave</span><span class="pr">$15</span>
+          <span class="counter"><button type="button" data-item="micro" data-d="-1" aria-label="−">−</button><output id="c_micro">0</output><button type="button" data-item="micro" data-d="1" aria-label="+">+</button></span></div>
+        <div class="itemrow"><span class="nm" data-i18n="it_washer">Washer</span><span class="pr">$40</span>
+          <span class="counter"><button type="button" data-item="washer" data-d="-1" aria-label="−">−</button><output id="c_washer">0</output><button type="button" data-item="washer" data-d="1" aria-label="+">+</button></span></div>
+        <div class="itemrow"><span class="nm" data-i18n="it_dryer">Dryer</span><span class="pr">$35</span>
+          <span class="counter"><button type="button" data-item="dryer" data-d="-1" aria-label="−">−</button><output id="c_dryer">0</output><button type="button" data-item="dryer" data-d="1" aria-label="+">+</button></span></div>
+        <div class="itemrow"><span class="nm" data-i18n="it_dish">Dishwasher</span><span class="pr">$30</span>
+          <span class="counter"><button type="button" data-item="dish" data-d="-1" aria-label="−">−</button><output id="c_dish">0</output><button type="button" data-item="dish" data-d="1" aria-label="+">+</button></span></div>
+        <div class="itemrow"><span class="nm" data-i18n="it_heater">Water heater</span><span class="pr">$45</span>
+          <span class="counter"><button type="button" data-item="heater" data-d="-1" aria-label="−">−</button><output id="c_heater">0</output><button type="button" data-item="heater" data-d="1" aria-label="+">+</button></span></div>
+        <div class="itemrow"><span class="nm" data-i18n="it_ac">A/C unit</span><span class="pr">$30</span>
+          <span class="counter"><button type="button" data-item="ac" data-d="-1" aria-label="−">−</button><output id="c_ac">0</output><button type="button" data-item="ac" data-d="1" aria-label="+">+</button></span></div>
+        <div class="itemrow"><span class="nm" data-i18n="it_freezer">Freezer</span><span class="pr">$40</span>
+          <span class="counter"><button type="button" data-item="freezer" data-d="-1" aria-label="−">−</button><output id="c_freezer">0</output><button type="button" data-item="freezer" data-d="1" aria-label="+">+</button></span></div>
+      </div>
+
+      <div class="items-sub" data-i18n="items_furn">Furniture &amp; household</div>
+      <div class="items items-grid">
+        <div class="itemrow"><span class="nm" data-i18n="it_sofa">Sofa / couch</span><span class="pr">$55</span>
+          <span class="counter"><button type="button" data-item="sofa" data-d="-1" aria-label="−">−</button><output id="c_sofa">0</output><button type="button" data-item="sofa" data-d="1" aria-label="+">+</button></span></div>
+        <div class="itemrow"><span class="nm" data-i18n="it_sectional">Sectional sofa</span><span class="pr">$85</span>
+          <span class="counter"><button type="button" data-item="sectional" data-d="-1" aria-label="−">−</button><output id="c_sectional">0</output><button type="button" data-item="sectional" data-d="1" aria-label="+">+</button></span></div>
+        <div class="itemrow"><span class="nm" data-i18n="it_mattress">Mattress &amp; box spring (set)</span><span class="pr">$45</span>
+          <span class="counter"><button type="button" data-item="mattress" data-d="-1" aria-label="−">−</button><output id="c_mattress">0</output><button type="button" data-item="mattress" data-d="1" aria-label="+">+</button></span></div>
+        <div class="itemrow"><span class="nm" data-i18n="it_bed">Bed frame</span><span class="pr">$35</span>
+          <span class="counter"><button type="button" data-item="bed" data-d="-1" aria-label="−">−</button><output id="c_bed">0</output><button type="button" data-item="bed" data-d="1" aria-label="+">+</button></span></div>
+        <div class="itemrow"><span class="nm" data-i18n="it_dresser">Dresser / wardrobe</span><span class="pr">$40</span>
+          <span class="counter"><button type="button" data-item="dresser" data-d="-1" aria-label="−">−</button><output id="c_dresser">0</output><button type="button" data-item="dresser" data-d="1" aria-label="+">+</button></span></div>
+        <div class="itemrow"><span class="nm" data-i18n="it_table">Table &amp; chairs (set)</span><span class="pr">$45</span>
+          <span class="counter"><button type="button" data-item="table" data-d="-1" aria-label="−">−</button><output id="c_table">0</output><button type="button" data-item="table" data-d="1" aria-label="+">+</button></span></div>
+        <div class="itemrow"><span class="nm" data-i18n="it_desk">Desk / office furniture</span><span class="pr">$35</span>
+          <span class="counter"><button type="button" data-item="desk" data-d="-1" aria-label="−">−</button><output id="c_desk">0</output><button type="button" data-item="desk" data-d="1" aria-label="+">+</button></span></div>
+        <div class="itemrow"><span class="nm" data-i18n="it_recliner">Recliner / armchair</span><span class="pr">$35</span>
+          <span class="counter"><button type="button" data-item="recliner" data-d="-1" aria-label="−">−</button><output id="c_recliner">0</output><button type="button" data-item="recliner" data-d="1" aria-label="+">+</button></span></div>
+        <div class="itemrow"><span class="nm" data-i18n="it_tv">TV / entertainment center</span><span class="pr">$30</span>
+          <span class="counter"><button type="button" data-item="tv" data-d="-1" aria-label="−">−</button><output id="c_tv">0</output><button type="button" data-item="tv" data-d="1" aria-label="+">+</button></span></div>
+        <div class="itemrow"><span class="nm" data-i18n="it_piano">Piano</span><span class="pr">$95</span>
+          <span class="counter"><button type="button" data-item="piano" data-d="-1" aria-label="−">−</button><output id="c_piano">0</output><button type="button" data-item="piano" data-d="1" aria-label="+">+</button></span></div>
+      </div>
+
+      <div class="items-sub" data-i18n="items_out">Outdoor, exercise &amp; more</div>
+      <div class="items items-grid">
+        <div class="itemrow"><span class="nm" data-i18n="it_treadmill">Treadmill / exercise equipment</span><span class="pr">$45</span>
+          <span class="counter"><button type="button" data-item="treadmill" data-d="-1" aria-label="−">−</button><output id="c_treadmill">0</output><button type="button" data-item="treadmill" data-d="1" aria-label="+">+</button></span></div>
+        <div class="itemrow"><span class="nm" data-i18n="it_hottub">Hot tub / spa</span><span class="pr">$120</span>
+          <span class="counter"><button type="button" data-item="hottub" data-d="-1" aria-label="−">−</button><output id="c_hottub">0</output><button type="button" data-item="hottub" data-d="1" aria-label="+">+</button></span></div>
+        <div class="itemrow"><span class="nm" data-i18n="it_grill">Grill / patio set</span><span class="pr">$35</span>
+          <span class="counter"><button type="button" data-item="grill" data-d="-1" aria-label="−">−</button><output id="c_grill">0</output><button type="button" data-item="grill" data-d="1" aria-label="+">+</button></span></div>
+        <div class="itemrow"><span class="nm" data-i18n="it_tire">Tire (each, disposal included)</span><span class="pr">$15</span>
+          <span class="counter"><button type="button" data-item="tire" data-d="-1" aria-label="−">−</button><output id="c_tire">0</output><button type="button" data-item="tire" data-d="1" aria-label="+">+</button></span></div>
+        <div class="itemrow"><span class="nm" data-i18n="it_mower">Lawn mower / snow blower</span><span class="pr">$30</span>
+          <span class="counter"><button type="button" data-item="mower" data-d="-1" aria-label="−">−</button><output id="c_mower">0</output><button type="button" data-item="mower" data-d="1" aria-label="+">+</button></span></div>
+        <div class="itemrow"><span class="nm" data-i18n="it_tramp">Trampoline / play set</span><span class="pr">$55</span>
+          <span class="counter"><button type="button" data-item="tramp" data-d="-1" aria-label="−">−</button><output id="c_tramp">0</output><button type="button" data-item="tramp" data-d="1" aria-label="+">+</button></span></div>
+      </div>
+      <p class="note" data-i18n="items_note">Don't see your item? Write it in the description below or send us a photo on WhatsApp and we'll price it right away. Single items alone have NO base fee — when you add them to a truck load, their price is added on top of the load, exactly as shown in your estimate.</p>
+      </div>
+    </div>
+
+    <label class="flabel" data-i18n="up_l">Photos or video <span class="hint" data-i18n="up_h">— add several; they help us price it right</span></label>
+    <div class="upload no-print">
+      <div data-i18n="up_t">Show us what goes — photos or a video help us price it right</div>
+      <label class="upload-btn" for="fileInput"><span class="ub-ico" aria-hidden="true">📸</span><span data-i18n="up_btn">Select photos or video</span></label>
+      <input type="file" id="fileInput" accept="image/*,video/*" multiple />
+      <div class="upload-count" id="fileCount" hidden></div>
+      <div class="thumbs" id="thumbs"></div>
+    </div>
+
+    <label class="flabel" for="desc" data-i18n="desc_l">Describe the job <span class="hint" data-i18n="desc_h">— type it, or tap the little mic and talk</span></label>
+    <div class="descwrap">
+      <textarea id="desc" data-i18n-ph="desc_ph" placeholder="Example: old sofa, fridge and bags of trash in the basement…"></textarea>
+      <button type="button" class="micbtn" id="micBtn" aria-label="Dictate / Dictar por voz" title="Voice / Voz">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="9" y="2" width="6" height="12" rx="3" fill="currentColor" stroke="none"/><path d="M5 10a7 7 0 0 0 14 0M12 19v3"/></svg>
+      </button>
+    </div>
+    <p class="hint" id="micHint" hidden data-i18n="mic_h">Listening… speak now. Tap the mic again to stop.</p>
+
+    <div class="invoice" id="invoice" aria-live="polite">
+      <div class="inv-head">
+        <div>
+          <h3 data-i18n="inv_h">Your estimate</h3>
+          <div class="inv-no"><span data-i18n="inv_no">Estimate</span> <span id="invNo">#001</span></div>
+          <div class="hint" data-i18n="inv_from">Donopoly Junk Removal · 484-879-9272 · donopolyjr@gmail.com</div>
+        </div>
+        <img class="inv-logo" src="assets/logo.jpg" alt="Donopoly Junk Removal logo" />
+      </div>
+      <div id="invLines" style="margin-top:10px"></div>
+      <div class="total"><span data-i18n="inv_total">Estimated total</span><span id="invTotal">—</span></div>
+      <p class="note" data-i18n="inv_note">This price is an estimate based on your photos, video and description. If when we arrive there are items that weren't visible, or the load weighs more than normal, the price may change — we always confirm the final price with you before we start.</p>
+    </div>
+
+    <label class="flabel" data-i18n="form_l">Where do we send your receipt?</label>
+    <div class="grid grid2">
+      <div><label class="hint" for="fName" data-i18n="f_name">Your name *</label><input type="text" id="fName" autocomplete="name" /></div>
+      <div><label class="hint" for="fPhone" data-i18n="f_phone">Phone number *</label><input type="tel" id="fPhone" autocomplete="tel" placeholder="484-000-0000" /></div>
+    </div>
+    <div style="margin-top:12px"><label class="hint" for="fAddr" data-i18n="f_addr">Address where the work will be done *</label><input type="text" id="fAddr" autocomplete="street-address" /></div>
+    <div class="grid grid2" style="margin-top:12px">
+      <div><label class="hint" for="bkDate" data-i18n="bk_date">Preferred date</label><input type="date" id="bkDate" /></div>
+      <div><label class="hint" for="bkTime" data-i18n="bk_time">Preferred time</label><input type="time" id="bkTime" /></div>
+    </div>
+    <div style="margin-top:12px"><label class="hint" for="fEmail" data-i18n="f_email">Email (if you want the receipt by email)</label><input type="email" id="fEmail" autocomplete="email" /></div>
+    <label class="flabel" data-i18n="chan_l">How should we reach you?</label>
+    <div class="radios" role="radiogroup">
+      <label><input type="radio" name="chan" value="WhatsApp" checked /> WhatsApp</label>
+      <label><input type="radio" name="chan" value="Text" /> <span data-i18n="chan_text">Text message</span></label>
+      <label><input type="radio" name="chan" value="Email" /> Email</label>
+    </div>
+    <p class="err" id="formErr" data-i18n="form_err">Please add your name, phone number and the job address so we can send your estimate.</p>
+
+    <div class="no-print" style="margin-top:16px">
+      <button type="button" class="btn btn-accent acceptbtn" id="acceptBtn" data-i18n="accept_btn">✓ Accept this estimate</button>
+    </div>
+    <div class="sendrow no-print">
+      <button type="button" class="btn btn-sm btn-wa" id="sendWa">WhatsApp</button>
+      <button type="button" class="btn btn-sm btn-gold" id="sendSms" data-i18n="send_sms_s">Text message</button>
+      <button type="button" class="btn btn-sm btn-line" id="sendEmail">Email</button>
+      <button type="button" class="btn btn-sm btn-brand" id="dlBtn" data-i18n="dl">Download receipt</button>
+    </div>
+    <p class="hint" data-i18n="send_h">Your estimate goes straight to Donopoly (484-879-9272 · donopolyjr@gmail.com) with your name, phone, job address and preferred date &amp; time — and you keep your own copy with Download receipt. On WhatsApp or text, attach your photos there too.</p>
+  </div>
+</section>
+
+<section id="areas">
+  <h2 data-i18n="ar_h">Where we work</h2>
+  <p class="sub" data-i18n="ar_p">Four service areas, each covering the city and its surrounding towns.</p>
+  <div class="mapbox" role="img" aria-label="Map of eastern Pennsylvania with pins on Lehigh Valley, Philadelphia, Scranton and Wilkes-Barre">
+    <svg viewBox="0 0 640 420" width="100%" style="height:auto" aria-hidden="true">
+      <rect x="0" y="0" width="640" height="420" rx="10" fill="#ffe9ad"/>
+      <path d="M60 60 L300 30 L470 70 L600 40 L620 200 L560 330 L600 400 L300 410 L90 380 L30 220 Z" fill="#fff6dc" stroke="#e3bd55" stroke-width="2"/>
+      <path d="M470 70 C430 160 480 250 420 330" fill="none" stroke="#7ec3ea" stroke-width="7" stroke-linecap="round"/>
+      <path d="M120 380 C220 300 300 260 420 200 C480 170 540 150 600 140" fill="none" stroke="#d8a03c" stroke-width="4" stroke-dasharray="10 8"/>
+      <g font-family="Barlow,sans-serif">
+        <g><circle cx="428" cy="118" r="11" fill="#d8232a" stroke="#fff" stroke-width="3"/><text x="446" y="112" font-weight="700" font-size="19" fill="#1a1408">Scranton</text><text x="446" y="132" font-size="14" fill="#5c5138">+ surrounding areas</text></g>
+        <g><circle cx="392" cy="168" r="11" fill="#d8232a" stroke="#fff" stroke-width="3"/><text x="300" y="162" font-weight="700" font-size="19" fill="#1a1408" text-anchor="end">Wilkes-Barre</text><text x="300" y="182" font-size="14" fill="#5c5138" text-anchor="end">+ surrounding areas</text></g>
+        <g><circle cx="330" cy="238" r="11" fill="#d8232a" stroke="#fff" stroke-width="3"/><text x="238" y="232" font-weight="700" font-size="19" fill="#1a1408" text-anchor="end">Lehigh Valley</text><text x="238" y="252" font-size="14" fill="#5c5138" text-anchor="end">Allentown area</text></g>
+        <g><circle cx="428" cy="330" r="11" fill="#d8232a" stroke="#fff" stroke-width="3"/><text x="446" y="324" font-weight="700" font-size="19" fill="#1a1408">Philadelphia</text><text x="446" y="344" font-size="14" fill="#5c5138">+ surrounding areas</text></g>
+      </g>
+    </svg>
+  </div>
+  <div class="arealist" style="margin-top:16px">
+    <a href="https://www.google.com/maps/search/Lehigh+Valley,+PA" target="_blank" rel="noopener">Lehigh Valley <span data-i18n="ar_lv">Allentown, Bethlehem, Easton &amp; surrounding areas →</span></a>
+    <a href="https://www.google.com/maps/search/Philadelphia,+PA" target="_blank" rel="noopener">Philadelphia <span data-i18n="ar_ph">City of Philadelphia &amp; surrounding areas →</span></a>
+    <a href="https://www.google.com/maps/search/Scranton,+PA" target="_blank" rel="noopener">Scranton <span data-i18n="ar_sc">Scranton &amp; surrounding areas →</span></a>
+    <a href="https://www.google.com/maps/search/Wilkes-Barre,+PA" target="_blank" rel="noopener">Wilkes-Barre <span data-i18n="ar_wb">Wilkes-Barre &amp; surrounding areas →</span></a>
+  </div>
+</section>
+
+<section id="connect">
+  <h2 data-i18n="cn_h">Contact</h2>
+  <p class="sub" data-i18n="cn_p">Call us, write us, or follow us — whichever is easiest for you.</p>
+  <div class="contactgrid">
+    <a class="cbtn" href="tel:+14848799272"><span class="cic nb-tel"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg></span><span class="ctx"><span data-i18n="ct_call">Call</span><b>484-879-9272</b></span></a>
+    <a class="cbtn" href="sms:+14848799272"><span class="cic" style="background:#2f6fb2"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 2H4a2 2 0 0 0-2 2v18l4-4h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"/></svg></span><span class="ctx"><span data-i18n="ct_text">Text message</span><b>484-879-9272</b></span></a>
+    <a class="cbtn" href="https://wa.me/14848799272" target="_blank" rel="noopener"><span class="cic nb-wa"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11.9 11.9 0 0 0 12.1 0C5.5 0 .1 5.4.1 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6a11.9 11.9 0 0 0 5.9 1.5c6.6 0 12-5.4 12-12 0-3.2-1.3-6.2-3.6-8.4zM12.1 21.8a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.3-.4a9.8 9.8 0 1 1 8.4 4.6zm5.4-7.4c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.7-2.1c-.2-.3 0-.5.1-.6l.5-.6c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-1-2.3c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.3-.6-.4z"/></svg></span><span class="ctx"><span>WhatsApp</span><b>484-879-9272</b></span></a>
+    <div class="cbtn"><span class="cic nb-mail"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span><span class="ctx"><span data-i18n="ct_email">Email</span><b><a href="mailto:donopolyjr@gmail.com" style="color:inherit;text-decoration:none">donopolyjr@gmail.com</a></b></span><span class="cacts"><a class="mini gold" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=donopolyjr@gmail.com" target="_blank" rel="noopener" data-i18n="ct_gmail">Gmail</a><button type="button" class="mini" id="copyEmail" data-i18n="ct_copy">Copy</button></span></div>
+    <a class="cbtn" href="https://www.facebook.com/profile.php?id=61596892734100" target="_blank" rel="noopener"><span class="cic nb-fb"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21.5v-7.2h2.5l.4-3h-2.9V9.4c0-.9.3-1.5 1.6-1.5h1.4V5.2c-.3 0-1.2-.1-2.2-.1-2.2 0-3.7 1.3-3.7 3.8v2.4H8.1v3h2.5v7.2h2.9z"/></svg></span><span class="ctx"><span>Facebook</span><b>Donopoly Junk Removal</b></span></a>
+    <a class="cbtn" href="https://www.instagram.com/donopolyjunkremoval" target="_blank" rel="noopener"><span class="cic nb-ig"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1.4" fill="currentColor" stroke="none"/></svg></span><span class="ctx"><span>Instagram</span><b>@donopolyjunkremoval</b></span></a>
+    <a class="cbtn" href="https://www.tiktok.com/@donopolyjunkremoval" target="_blank" rel="noopener"><span class="cic nb-tt"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.7 2.5c.4 2.2 1.9 3.9 4.1 4.1v3.1c-1.6 0-3-.5-4.1-1.3v6.3a6.1 6.1 0 1 1-6.1-6.1c.3 0 .7 0 1 .1v3.2a3 3 0 1 0 2.1 2.9V2.5h3z"/></svg></span><span class="ctx"><span>TikTok</span><b>@donopolyjunkremoval</b></span></a>
+    <a class="cbtn" href="https://www.youtube.com/@DonopolyJunkRemoval" target="_blank" rel="noopener"><span class="cic nb-yt"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8zM10 15.2V8.8l5.2 3.2L10 15.2z"/></svg></span><span class="ctx"><span>YouTube</span><b>@DonopolyJunkRemoval</b></span></a>
+  </div>
+  <p class="hint" style="margin-top:10px" data-i18n="ct_hint">Tap any button to reach us. For email you have two ways: Gmail opens a ready-to-send message, and Copy saves the address so you can paste it into any mail app.</p>
+  <div class="share">
+    <span style="font-weight:700;align-self:center" data-i18n="sh_l">Share this site:</span>
+    <a id="shWa" href="https://wa.me/?text=Donopoly%20Junk%20Removal%20%E2%80%94%20https%3A%2F%2Fdonopolyjunkremoval.com" target="_blank" rel="noopener">WhatsApp</a>
+    <a id="shFb" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdonopolyjunkremoval.com" target="_blank" rel="noopener">Facebook</a>
+    <a id="shX" href="https://twitter.com/intent/tweet?text=Donopoly%20Junk%20Removal%20%E2%80%94%20junk%20removal%20%26%20cleanouts%20in%20PA&amp;url=https%3A%2F%2Fdonopolyjunkremoval.com" target="_blank" rel="noopener">X</a>
+  </div>
+  <div class="share">
+    <span style="font-weight:700;align-self:center" data-i18n="rv_l">Happy with our work?</span>
+    <a href="https://www.google.com/maps/search/Donopoly+Junk+Removal+PA" target="_blank" rel="noopener" data-i18n="rv_btn">Leave us a review on Google</a>
+  </div>
+  <div class="est" style="margin-top:22px">
+    <h3 class="cond" style="font-size:1.35rem;text-transform:uppercase;margin:0 0 2px" data-i18n="msg_h">Write us a message</h3>
+    <p class="hint" style="margin:0 0 12px" data-i18n="msg_p">Questions? Write here and send it — it goes straight to Donopoly, and only we see it.</p>
+    <div><label class="hint" for="msgName" data-i18n="msg_name">Your name</label><input type="text" id="msgName" autocomplete="name" /></div>
+    <div style="margin-top:10px"><textarea id="msgText" data-i18n-ph="msg_ph" placeholder="Write your message…"></textarea></div>
+    <div class="sendrow">
+      <button type="button" class="btn btn-sm btn-wa" id="msgWa">WhatsApp</button>
+      <button type="button" class="btn btn-sm btn-line" id="msgEmail">Email</button>
+    </div>
+  </div>
+  <div style="margin-top:26px">
+    <h3 class="cond" style="font-size:1.3rem;text-transform:uppercase;margin:0 0 4px" data-i18n="kw_h">Find us when you search</h3>
+    <p style="color:var(--ink2);margin:0 0 10px" data-i18n="kw_p">Junk removal · junk hauling · trash removal · debris removal · demolition · cleanouts · estate, garage &amp; basement cleanouts · furniture &amp; appliance removal — limpieza, recogida de basura, demolición y limpieza de casas en Allentown PA, Lehigh Valley, Philadelphia, Scranton, Wilkes-Barre y todo Pennsylvania.</p>
+    <p style="line-height:2;font-weight:600;word-break:break-word">
+      #DonopolyJunkRemoval #JunkRemoval #JunkHauling #TrashRemoval #DebrisRemoval #Demolition #Cleanout #EstateCleanout #GarageCleanout #BasementCleanout #FurnitureRemoval #ApplianceRemoval #Hauling #Limpieza #RecogidaDeBasura #Demolición #LimpiezaDeCasas #AllentownPA #LehighValley #Philadelphia #Scranton #WilkesBarre #Pennsylvania #PA
+    </p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap cols">
+    <div><h3>Donopoly Junk Removal</h3><p data-i18n="ft_p">Junk removal, cleanouts and demolition debris hauling for homes and businesses.</p></div>
+    <div><h3 data-i18n="ft_c">Contact</h3><p>📞 <a href="tel:+14848799272">484-879-9272</a><br/>✉️ <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=donopolyjr@gmail.com" target="_blank" rel="noopener">donopolyjr@gmail.com</a><br/>💬 <a href="https://wa.me/14848799272" target="_blank" rel="noopener">WhatsApp</a><br/>🌐 <a href="https://donopolyjunkremoval.com">donopolyjunkremoval.com</a><br/><a href="https://www.facebook.com/profile.php?id=61596892734100" target="_blank" rel="noopener">Facebook</a> · <a href="https://www.instagram.com/donopolyjunkremoval" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.tiktok.com/@donopolyjunkremoval" target="_blank" rel="noopener">TikTok</a> · <a href="https://www.youtube.com/@DonopolyJunkRemoval" target="_blank" rel="noopener">YouTube</a></p></div>
+    <div><h3 data-i18n="ft_a">Areas</h3><p>Lehigh Valley · Philadelphia<br/>Scranton · Wilkes-Barre<br/><span data-i18n="ft_a2">and surrounding areas</span></p></div>
+  </div>
+  <div class="wrap" style="margin-top:22px;border-top:1px solid rgba(255,255,255,.25);padding-top:16px">
+    <p style="margin:0;line-height:2;font-size:.95rem">#DonopolyJunkRemoval #JunkRemoval #JunkHauling #TrashRemoval #DebrisRemoval #Demolition #Cleanout #EstateCleanout #GarageCleanout #BasementCleanout #FurnitureRemoval #ApplianceRemoval #Limpieza #RecogidaDeBasura #Demolición #LimpiezaDeCasas #AllentownPA #LehighValley #Philadelphia #Scranton #WilkesBarre #Pennsylvania</p>
+  </div>
+</footer>
+
+<div class="stickybar">
+  <a class="btn btn-accent" href="#estimate" data-i18n="sb_est">Free estimate</a>
+  <a class="btn btn-wa" href="https://wa.me/14848799272" target="_blank" rel="noopener">WhatsApp</a>
+  <a class="btn btn-gold" href="tel:+14848799272" data-i18n="sb_call">Call</a>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+(function(){
+"use strict";
+var I18N = {
+en:{nav_services:"Services",nav_prices:"Prices",nav_estimate:"Get an estimate",nav_areas:"Areas",
+hero_h:'You point. <em>We haul it all.</em>',hero_p:"Junk removal, full-property cleanouts and demolition debris hauling for homes and businesses. Up-front range pricing, fast scheduling, and a crew that does the heavy lifting for you.",hero_cta1:"Get my free estimate",hero_cta2:"WhatsApp us",hero_cta3:"Call 484-879-9272",hero_areas:"Lehigh Valley · Philadelphia · Scranton · Wilkes-Barre — and surrounding areas",
+svc_h:"What we haul",svc_p:"Any type of junk and demolition debris, for individuals and companies. We load it, haul it and dispose of it properly — you don't lift a thing.",svc1_h:"Furniture & appliances",svc1_p:"Sofas, mattresses, tables, refrigerators, stoves, washers and more — single items or whole rooms.",svc2_h:"Cleanouts",svc2_p:"Garages, basements, move-outs and full-property cleanouts, left broom-clean and ready for what's next.",svc3_h:"Demolition & debris",svc3_p:"We do the demolition when needed and haul concrete, dirt, drywall, scrap and construction debris. Demolition is quoted in person.",svc4_t:"Yard",svc4_h:"Leaves & yard waste",svc4_p:"Leaf pickup, branches and yard debris — our lowest base price.",svc5_t:"Heavy",svc5_h:"Concrete, dirt & scrap",svc5_p:"Heavy materials priced by weight and disposal cost — select them in the estimator.",svc6_t:"Business",svc6_h:"Commercial jobs",svc6_p:"Offices, rentals, warehouses and job sites. One call, one crew, done.",
+pr_h:"Honest range pricing",pr_p:"Every load is priced as an estimated range, because the final price depends on the material and weight once we see it. Even a small load is never $0 — it covers the crew's time and fuel.",pr_c1:"Load size",pr_c2:"Estimated range",pr_r1:"Small load",pr_r2:"¼ truck",pr_r3:"½ truck",pr_r4:"¾ truck",pr_r5:"Full truck",pr_note:"Single loose items are priced per item with no general base fee — for example: refrigerator $45 · stove $35 · microwave $15. The per-item price already includes the disposal, handling, fuel and time.",
+est_h:"Instant estimate",est_p:"Build your estimate in under a minute. Add photos or a video, tap what you're getting rid of, and see a detailed, invoice-style estimate right away.",st1:"1 · What goes",st2:"2 · Photos & details",st3:"3 · Your info",st4:"4 · Get your receipt",mode_l:"How do you want to price it?",mode1_b:"By truck load",mode1_s:"A pile, a room, a garage — priced by how much of the truck it fills.",mode2_b:"Single items only",mode2_s:"Just a fridge, a stove, a microwave… priced per item, no base fee.",mat_l:"Type of material",mat_h:"— tap all that apply; scrap, dirt, debris & trash can be combined",m_furn:"Furniture & loose items",m_gar:"Garage / basement",m_trash:"General trash",m_deb:"Debris / drywall",m_leaf:"Leaves & yard waste",m_conc:"Concrete",m_dirt:"Dirt",m_scrap:"Scrap metal",m_clean:"Full cleanout / move-out",m_demo:"Demolition",heavy:"heavy",heavy2:"heavy",demo_s:"quoted in person",size_l:"How much of the truck?",s_small:"Small load",s_q1:"¼ truck",s_half:"½ truck",s_q3:"¾ truck",s_full:"Full truck",meter_l:"How full is the truck?",meter_pick:"Pick a load size above and watch the truck fill up.",mtr_0:"Small",mtr_4:"Full",combine_note:"Two ways, ONE estimate: price a truck load <b>and</b> add single items on top — or single items alone, with <b>no base fee</b>.",load_h:"Option A · By truck load",items_l:"Option B · Single items — alone or on top of a load",items_h:"— no base fee when they're alone; tap + for each one",items_open:"Tap to open or close the list",items_appl:"Appliances",items_furn:"Furniture & household",items_out:"Outdoor, exercise & more",it_fridge:"Refrigerator",it_stove:"Stove / range",it_micro:"Microwave",it_washer:"Washer",it_dryer:"Dryer",it_dish:"Dishwasher",it_heater:"Water heater",it_ac:"A/C unit",it_freezer:"Freezer",it_sofa:"Sofa / couch",it_sectional:"Sectional sofa",it_mattress:"Mattress & box spring (set)",it_bed:"Bed frame",it_dresser:"Dresser / wardrobe",it_table:"Table & chairs (set)",it_desk:"Desk / office furniture",it_recliner:"Recliner / armchair",it_tv:"TV / entertainment center",it_piano:"Piano",it_treadmill:"Treadmill / exercise equipment",it_hottub:"Hot tub / spa",it_grill:"Grill / patio set",it_tire:"Tire (each, disposal included)",it_mower:"Lawn mower / snow blower",it_tramp:"Trampoline / play set",items_note:"Don't see your item? Write it in the description below or send us a photo on WhatsApp and we'll price it right away. Single items alone have NO base fee — when you add them to a truck load, their price is added on top of the load, exactly as shown in your estimate.",up_l:"Photos or video",up_h:"— add several; they help us price it right",up_t:"Show us what goes — photos or a video help us price it right",up_btn:"Select photos or video",file_sel:"selected — they'll go with your estimate on WhatsApp or text",send_sms:"Send by text message",send_email:"Send by email",desc_l:"Describe the job",desc_h:"— type it, or tap the little mic and talk",desc_ph:"Example: old sofa, fridge and bags of trash in the basement…",mic_h:"Listening… speak now. Tap the mic again to stop.",inv_h:"Your estimate",inv_no:"Estimate",inv_from:"Donopoly Junk Removal · 484-879-9272 · donopolyjr@gmail.com",inv_total:"Estimated total",inv_note:"This price is an estimate based on your photos, video and description. If when we arrive there are items that weren't visible, or the load weighs more than normal, the price may change — we always confirm the final price with you before we start.",form_l:"Where do we send your receipt?",f_name:"Your name *",f_phone:"Phone number *",f_addr:"Address where the work will be done *",f_email:"Email (if you want the receipt by email)",chan_l:"How should we reach you?",chan_text:"Text message",form_err:"Please add your name, phone number and the job address so we can send your estimate.",send_wa:"Send it to Donopoly on WhatsApp",dl:"Download receipt",print:"Print / save PDF",send_h:"Your estimate goes straight to Donopoly (484-879-9272 · donopolyjr@gmail.com) with your name, phone, job address and preferred date & time — and you keep your own copy with Download receipt. On WhatsApp or text, attach your photos there too.",bk_h:"Book a visit",bk_p:"Pick a day and time that works for you and we'll confirm on WhatsApp.",bk_date:"Preferred date",bk_time:"Preferred time",bk_btn:"Request this visit on WhatsApp",bk_call:"Or call 484-879-9272",ar_h:"Where we work",ar_p:"Four service areas, each covering the city and its surrounding towns.",ar_lv:"Allentown, Bethlehem, Easton & surrounding areas →",ar_ph:"City of Philadelphia & surrounding areas →",ar_sc:"Scranton & surrounding areas →",ar_wb:"Wilkes-Barre & surrounding areas →",cn_h:"Contact",cn_p:"Call us, write us, or follow us — whichever is easiest for you.",ct_call:"Call",ct_text:"Text message",ct_email:"Email",ct_gmail:"Gmail",ct_copy:"Copy",ct_copied:"Email copied — paste it in your mail app ✓",ct_hint:"Tap any button to reach us. For email you have two ways: Gmail opens a ready-to-send message, and Copy saves the address so you can paste it into any mail app.",mail_open:"Opening email…",sh_l:"Share this site:",sh_copy:"Copy link",rv_l:"Happy with our work?",rv_btn:"Leave us a review on Google",ft_p:"Junk removal, cleanouts and demolition debris hauling for homes and businesses.",ft_c:"Contact",ft_a:"Areas",ft_a2:"and surrounding areas",sb_est:"Free estimate",sb_call:"Call",kw_h:"Find us when you search",kw_p:"Junk removal · junk hauling · trash removal · debris removal · demolition · cleanouts · estate, garage & basement cleanouts · furniture & appliance removal — limpieza, recogida de basura, demolición y limpieza de casas en Allentown PA, Lehigh Valley, Philadelphia, Scranton, Wilkes-Barre y todo Pennsylvania.",
+inv_empty:"Pick a truck load above, add single items below — or both together — and your detailed estimate appears here.",inv_demo:"Demolition needs a look in person — no automatic price. Send us the details on WhatsApp and we'll quote it.",inv_picksize:"Now pick how much of the truck it fills to see your range.",inv_baseline:"Base — ",inv_sizeline:"Load — ",inv_heavy:"Heavy material (concrete/dirt): priced toward the top of the range by weight & disposal.",inv_items:"Single items — no base fee",inv_items_add:"Single items added",inv_total_fixed:"Total",copied:"Link copied!",mic_no:"Voice dictation isn't available in this browser — you can type the description instead.",bk_msg:"Hi Donopoly! I'd like to book a visit.",wa_intro:"Hi Donopoly! Here's my estimate from donopolyjunkremoval.com:",accept_btn:"✓ Accept this estimate",accept_done:"Accepted — thank you! We'll confirm shortly.",accept_msg:"Hi Donopoly! I ACCEPT this estimate:",send_sms_s:"Text message",msg_h:"Write us a message",msg_p:"Questions? Write here and send it — it goes straight to Donopoly, and only we see it.",msg_name:"Your name",msg_ph:"Write your message…",msg_intro:"Hi Donopoly! Message from your website:",mic_denied:"The microphone is blocked. Allow mic access in your browser — or just type the description.",vid_h:"Watch us in action",vid_p:"Real Donopoly videos — our truck and crew on the job. New videos are added here as we publish them.",vid_more:"More videos on YouTube · @DonopolyJunkRemoval"},
+es:{nav_services:"Servicios",nav_prices:"Precios",nav_estimate:"Cotizar gratis",nav_areas:"Zonas",
+hero_h:'Tú señalas. <em>Nosotros lo cargamos todo.</em>',hero_p:"Recogida de basura y escombros, limpiezas completas de propiedades y acarreo de escombros de demolición para casas y negocios. Precios en rango por adelantado, agenda rápida y un equipo que hace el trabajo pesado por ti.",hero_cta1:"Cotizar gratis ahora",hero_cta2:"Escríbenos por WhatsApp",hero_cta3:"Llamar 484-879-9272",hero_areas:"Lehigh Valley · Philadelphia · Scranton · Wilkes-Barre — y alrededores",
+svc_h:"Qué recogemos",svc_p:"Todo tipo de basura y escombros de demolición, para personas y compañías. Lo cargamos, lo llevamos y lo botamos como se debe — tú no levantas nada.",svc1_h:"Muebles y electrodomésticos",svc1_p:"Sofás, colchones, mesas, neveras, estufas, lavadoras y más — artículos sueltos o cuartos enteros.",svc2_h:"Limpiezas completas",svc2_p:"Garajes, sótanos, mudanzas y limpiezas de propiedad completa, dejados barridos y listos para lo que sigue.",svc3_h:"Demolición y escombros",svc3_p:"Hacemos la demolición cuando hace falta y cargamos concreto, tierra, sheetrock, chatarra y escombros de construcción. La demolición se cotiza en persona.",svc4_t:"Patio",svc4_h:"Hojas y desechos de patio",svc4_p:"Recogida de hojas, ramas y escombros de patio — nuestro precio base más bajito.",svc5_t:"Pesado",svc5_h:"Concreto, tierra y chatarra",svc5_p:"Los materiales pesados se cobran por peso y costo de botarlos — elígelos en el cotizador.",svc6_t:"Negocios",svc6_h:"Trabajos comerciales",svc6_p:"Oficinas, alquileres, almacenes y obras. Una llamada, un equipo, listo.",
+pr_h:"Precios honestos, en rango",pr_p:"Cada carga se cotiza como un rango estimado, porque el precio final depende del material y el peso cuando lo vemos. Ni la carga pequeña es $0 — cubre el tiempo del equipo y el combustible.",pr_c1:"Tamaño de carga",pr_c2:"Rango estimado",pr_r1:"Carga pequeña",pr_r2:"¼ de camión",pr_r3:"½ camión",pr_r4:"¾ de camión",pr_r5:"Camión lleno",pr_note:"Los artículos sueltos se cobran por artículo, sin precio base general — por ejemplo: nevera $45 · estufa $35 · microondas $15. Ese precio ya incluye el desecho, el movimiento, el combustible y el tiempo.",
+est_h:"Cotizador instantáneo",est_p:"Arma tu estimado en menos de un minuto. Sube fotos o un video, toca lo que vas a botar y mira tu estimado detallado, como un recibo, al instante.",st1:"1 · Qué se va",st2:"2 · Fotos y detalles",st3:"3 · Tus datos",st4:"4 · Tu recibo",mode_l:"¿Cómo quieres cotizar?",mode1_b:"Por carga de camión",mode1_s:"Una pila, un cuarto, un garaje — se cobra por cuánto llena del camión.",mode2_b:"Solo artículos sueltos",mode2_s:"Solo una nevera, una estufa, un microondas… por artículo, sin base.",mat_l:"Tipo de material",mat_h:"— toca todos los que apliquen; chatarra, tierra, escombro y basura se pueden combinar",m_furn:"Muebles y artículos sueltos",m_gar:"Garaje / sótano",m_trash:"Basura general",m_deb:"Escombros / sheetrock",m_leaf:"Hojas y desechos de patio",m_conc:"Concreto",m_dirt:"Tierra",m_scrap:"Chatarra",m_clean:"Limpieza completa / mudanza",m_demo:"Demolición",heavy:"pesado",heavy2:"pesado",demo_s:"se cotiza en persona",size_l:"¿Cuánto llena del camión?",s_small:"Carga pequeña",s_q1:"¼ de camión",s_half:"½ camión",s_q3:"¾ de camión",s_full:"Camión lleno",meter_l:"¿Cuánto se llena el camión?",meter_pick:"Elige un tamaño arriba y mira cómo se llena el camión.",mtr_0:"Pequeña",mtr_4:"Lleno",combine_note:"Dos formas, UN solo estimado: cotiza una carga de camión <b>y</b> agrega artículos sueltos encima — o solo artículos sueltos, <b>sin precio base</b>.",load_h:"Opción A · Por carga de camión",items_l:"Opción B · Artículos sueltos — solos o encima de una carga",items_h:"— sin precio base cuando van solos; toca + por cada uno",items_open:"Toca para abrir o cerrar la lista",items_appl:"Electrodomésticos",items_furn:"Muebles y hogar",items_out:"Patio, ejercicio y más",it_fridge:"Nevera",it_stove:"Estufa",it_micro:"Microondas",it_washer:"Lavadora",it_dryer:"Secadora",it_dish:"Lavaplatos",it_heater:"Calentador de agua",it_ac:"Aire acondicionado",it_freezer:"Congelador (freezer)",it_sofa:"Sofá",it_sectional:"Sofá seccional",it_mattress:"Colchón y box spring (juego)",it_bed:"Marco de cama",it_dresser:"Cómoda / armario",it_table:"Mesa y sillas (juego)",it_desk:"Escritorio / muebles de oficina",it_recliner:"Sillón reclinable",it_tv:"Televisor / centro de entretenimiento",it_piano:"Piano",it_treadmill:"Caminadora / equipo de ejercicio",it_hottub:"Jacuzzi / spa",it_grill:"BBQ / juego de patio",it_tire:"Neumático (cada uno, desecho incluido)",it_mower:"Cortacésped / quitanieves",it_tramp:"Trampolín / juego de niños",items_note:"¿No ves tu artículo? Escríbelo abajo en la descripción o mándanos la foto por WhatsApp y te lo cotizamos enseguida. Los artículos sueltos solos NO llevan precio base — cuando los agregas a una carga de camión, su precio se suma encima de la carga, tal como sale en tu estimado.",up_l:"Fotos o video",up_h:"— sube varias; nos ayudan a cotizar bien",up_t:"Muéstranos lo que se va — fotos o un video nos ayudan a cotizar bien",up_btn:"Seleccionar fotos o video",file_sel:"seleccionados — van con tu estimado por WhatsApp o texto",send_sms:"Enviar por mensaje de texto",send_email:"Enviar por email",desc_l:"Describe el trabajo",desc_h:"— escríbelo, o toca el micrófonito y habla",desc_ph:"Ejemplo: sofá viejo, nevera y bolsas de basura en el sótano…",mic_h:"Escuchando… habla ahora. Toca el micrófono otra vez para parar.",inv_h:"Tu estimado",inv_no:"Estimado",inv_from:"Donopoly Junk Removal · 484-879-9272 · donopolyjr@gmail.com",inv_total:"Total estimado",inv_note:"Este precio es un estimado según tus fotos, video y descripción. Si al llegar hay cosas que no se veían, o la carga pesa más de lo normal, el precio puede variar — siempre te confirmamos el precio final antes de empezar.",form_l:"¿A dónde te mandamos tu recibo?",f_name:"Tu nombre *",f_phone:"Tu número de teléfono *",f_addr:"Dirección donde se hará el trabajo *",f_email:"Email (si quieres el recibo por email)",chan_l:"¿Por dónde te contactamos?",chan_text:"Mensaje de texto",form_err:"Por favor pon tu nombre, tu teléfono y la dirección del trabajo para poder enviarte el estimado.",send_wa:"Enviarlo a Donopoly por WhatsApp",dl:"Descargar recibo",print:"Imprimir / guardar PDF",send_h:"Tu estimado llega directo a Donopoly (484-879-9272 · donopolyjr@gmail.com) con tu nombre, teléfono, dirección del trabajo y fecha y hora preferidas — y tú guardas tu copia con Descargar recibo. Por WhatsApp o texto adjunta ahí también tus fotos.",bk_h:"Agenda una visita",bk_p:"Elige el día y la hora que te convengan y te confirmamos por WhatsApp.",bk_date:"Fecha preferida",bk_time:"Hora preferida",bk_btn:"Pedir esta visita por WhatsApp",bk_call:"O llama al 484-879-9272",ar_h:"Dónde trabajamos",ar_p:"Cuatro zonas de servicio, cada una cubre la ciudad y sus alrededores.",ar_lv:"Allentown, Bethlehem, Easton y alrededores →",ar_ph:"Ciudad de Philadelphia y alrededores →",ar_sc:"Scranton y alrededores →",ar_wb:"Wilkes-Barre y alrededores →",cn_h:"Contacto",cn_p:"Llámanos, escríbenos o síguenos — lo que te quede más fácil.",ct_call:"Llamar",ct_text:"Mensaje de texto",ct_email:"Correo",ct_gmail:"Gmail",ct_copy:"Copiar",ct_copied:"Correo copiado — pégalo en tu app de correo ✓",ct_hint:"Toca cualquier botón para contactarnos. Para el correo tienes dos formas: Gmail abre un mensaje listo para enviar, y Copiar guarda la dirección para pegarla en cualquier app de correo.",mail_open:"Abriendo el correo…",sh_l:"Comparte este sitio:",sh_copy:"Copiar enlace",rv_l:"¿Contento con nuestro trabajo?",rv_btn:"Déjanos una reseña en Google",ft_p:"Recogida de basura, limpiezas completas y acarreo de escombros de demolición para casas y negocios.",ft_c:"Contacto",ft_a:"Zonas",ft_a2:"y alrededores",sb_est:"Cotizar gratis",sb_call:"Llamar",kw_h:"Encuéntranos cuando busques",kw_p:"Junk removal · junk hauling · trash removal · debris removal · demolition · cleanouts · estate, garage & basement cleanouts · furniture & appliance removal — limpieza, recogida de basura, demolición y limpieza de casas en Allentown PA, Lehigh Valley, Philadelphia, Scranton, Wilkes-Barre y todo Pennsylvania.",
+inv_empty:"Elige una carga de camión arriba, agrega artículos sueltos abajo — o las dos cosas juntas — y tu estimado detallado aparece aquí.",inv_demo:"La demolición hay que verla en persona — no lleva precio automático. Mándanos los detalles por WhatsApp y te la cotizamos.",inv_picksize:"Ahora elige cuánto llena del camión para ver tu rango.",inv_baseline:"Base — ",inv_sizeline:"Carga — ",inv_heavy:"Material pesado (concreto/tierra): se cobra hacia la parte alta del rango, por peso y desecho.",inv_items:"Artículos sueltos — sin precio base",inv_items_add:"Artículos sueltos agregados",inv_total_fixed:"Total",copied:"¡Enlace copiado!",mic_no:"El dictado por voz no está disponible en este navegador — puedes escribir la descripción.",bk_msg:"¡Hola Donopoly! Quiero agendar una visita.",wa_intro:"¡Hola Donopoly! Aquí va mi estimado de donopolyjunkremoval.com:",accept_btn:"✓ Aceptar este estimado",accept_done:"Aceptado — ¡gracias! Te confirmamos enseguida.",accept_msg:"¡Hola Donopoly! ACEPTO este estimado:",send_sms_s:"Mensaje de texto",msg_h:"Escríbenos un mensaje",msg_p:"¿Preguntas? Escribe aquí y envíalo — llega directo a Donopoly, y solo nosotros lo vemos.",msg_name:"Tu nombre",msg_ph:"Escribe tu mensaje…",msg_intro:"¡Hola Donopoly! Mensaje desde tu sitio web:",mic_denied:"El micrófono está bloqueado. Permite el acceso al micrófono en tu navegador — o escribe la descripción.",vid_h:"Míranos en acción",vid_p:"Videos reales de Donopoly — nuestro camión y equipo trabajando. Aquí agregamos los videos nuevos cuando se publican.",vid_more:"Más videos en YouTube · @DonopolyJunkRemoval"}
+};
+var lang = (navigator.language||"en").toLowerCase().indexOf("es")===0 ? "es" : "en";
+function t(k){ return (I18N[lang]&&I18N[lang][k]) || I18N.en[k] || k; }
+function applyLang(){
+  document.documentElement.lang = lang;
+  document.querySelectorAll("[data-i18n]").forEach(function(el){ var v=t(el.getAttribute("data-i18n")); if(v) el.innerHTML=v; });
+  document.querySelectorAll("[data-i18n-ph]").forEach(function(el){ var v=t(el.getAttribute("data-i18n-ph")); if(v) el.placeholder=v; });
+  document.querySelectorAll("#langBtn .flag").forEach(function(f){ f.classList.toggle("on", f.getAttribute("data-f")===lang); });
+  renderInvoice();
+}
+document.getElementById("langBtn").addEventListener("click",function(){ lang = lang==="en"?"es":"en"; applyLang(); });
+
+/* estimator state — truck load and single items COMBINE in one estimate */
+var SIZES = { small:[49,100], q1:[120,180], half:[280,380], q3:[430,550], full:[530,700] };
+var BASES = { furniture:[89,140], garage:[149,220] };
+var ITEMS = { fridge:45, stove:35, micro:15, washer:40, dryer:35, dish:30, heater:45, ac:30, freezer:40, sofa:55, sectional:85, mattress:45, bed:35, dresser:40, table:45, desk:35, recliner:35, tv:30, piano:95, treadmill:45, hottub:120, grill:35, tire:15, mower:30, tramp:55 };
+var ITEMKEYS = { fridge:"it_fridge", stove:"it_stove", micro:"it_micro", washer:"it_washer", dryer:"it_dryer", dish:"it_dish", heater:"it_heater", ac:"it_ac", freezer:"it_freezer", sofa:"it_sofa", sectional:"it_sectional", mattress:"it_mattress", bed:"it_bed", dresser:"it_dresser", table:"it_table", desk:"it_desk", recliner:"it_recliner", tv:"it_tv", piano:"it_piano", treadmill:"it_treadmill", hottub:"it_hottub", grill:"it_grill", tire:"it_tire", mower:"it_mower", tramp:"it_tramp" };
+var state = { mats:{}, size:null, counts:{}, files:0 };
+Object.keys(ITEMS).forEach(function(k){ state.counts[k]=0; });
+var MATKEYS = { furniture:"m_furn", garage:"m_gar", trash:"m_trash", debris:"m_deb", leaves:"m_leaf", concrete:"m_conc", dirt:"m_dirt", scrap:"m_scrap", cleanout:"m_clean", demo:"m_demo" };
+var SIZEKEYS = { small:"s_small", q1:"s_q1", half:"s_half", q3:"s_q3", full:"s_full" };
+var FILLS = { small:10, q1:25, half:50, q3:75, full:100 };
+var estNo = (function(){ var n=Date.now()%1000; return "#"+(n<10?"00":n<100?"0":"")+n; })();
+function updateMeter(){
+  var fill=document.getElementById("meterFill"), pct=document.getElementById("meterPct"), cap=document.getElementById("meterCap");
+  if(!fill) return;
+  if(!state.size){ fill.style.width="0%"; pct.textContent="0%"; cap.textContent=t("meter_pick"); return; }
+  var p=FILLS[state.size], s=SIZES[state.size];
+  fill.style.width=p+"%"; pct.textContent=p+"%";
+  cap.textContent=t(SIZEKEYS[state.size])+" · "+p+"% · "+money(s[0])+"–"+money(s[1]);
+}
+
+document.querySelectorAll("#matChips .chip").forEach(function(ch){
+  ch.addEventListener("click",function(){
+    var k=ch.getAttribute("data-mat"); var on = ch.getAttribute("aria-pressed")==="true";
+    ch.setAttribute("aria-pressed", String(!on)); state.mats[k]=!on; renderInvoice();
+  });
+});
+document.querySelectorAll("#sizeChips .chip").forEach(function(ch){
+  ch.addEventListener("click",function(){
+    document.querySelectorAll("#sizeChips .chip").forEach(function(c){ c.setAttribute("aria-pressed","false"); });
+    ch.setAttribute("aria-pressed","true"); state.size=ch.getAttribute("data-size"); renderInvoice();
+  });
+});
+/* single-items list — collapsible panel, two columns inside */
+var itT=document.getElementById("itemsToggle"), itP=document.getElementById("itemsPanel");
+if(itT&&itP){ itT.addEventListener("click",function(){ var open=itP.hidden; itP.hidden=!open; itT.setAttribute("aria-expanded",String(open)); itT.classList.toggle("open",open); }); }
+document.querySelectorAll(".counter button").forEach(function(b){
+  b.addEventListener("click",function(){
+    var it=b.getAttribute("data-item"), d=parseInt(b.getAttribute("data-d"),10);
+    state.counts[it]=Math.max(0, Math.min(20, state.counts[it]+d));
+    document.getElementById("c_"+it).textContent=state.counts[it]; renderInvoice();
+  });
+});
+function money(n){ return "$"+n; }
+function compute(){
+  var lines=[], lo=null, hi=null, fixed=null, demo=false, needSize=false;
+  /* --- truck-load part --- */
+  var matNames=Object.keys(state.mats).filter(function(k){return state.mats[k];});
+  if(matNames.indexOf("demo")>=0) demo=true;
+  var baseLo=0, baseHi=0, baseName=null;
+  ["furniture","garage"].forEach(function(k){ if(state.mats[k]){ if(BASES[k][0]>baseLo){baseLo=BASES[k][0];baseHi=BASES[k][1];baseName=k;} }});
+  var hasLoad=false;
+  if(matNames.length && !demo){
+    var label = matNames.map(function(k){return t(MATKEYS[k]);}).join(" + ");
+    if(state.size){ var s=SIZES[state.size];
+      lines.push([t("inv_sizeline")+t(SIZEKEYS[state.size])+" — "+label, money(s[0])+"–"+money(s[1])]);
+      /* Base and load describe the same job: quote the load range, raised to at least the material base. */
+      lo = Math.max(s[0], Math.min(baseLo||0, s[1])); hi = Math.max(s[1], baseHi||0);
+      hasLoad=true;
+      if(state.mats.concrete||state.mats.dirt){ lines.push([t("inv_heavy"), ""]); }
+    } else if(matNames.length){
+      if(baseName){ lines.push([t("inv_baseline")+label, money(baseLo)+"–"+money(baseHi)]); }
+      else { lines.push([label, ""]); }
+      needSize=true;
+    }
+  }
+  /* --- single-items part (alone = no base fee; with a load = added on top) --- */
+  var itemsTot=0, anyItem=false;
+  Object.keys(ITEMS).forEach(function(k){ var c=state.counts[k]; if(c>0){ anyItem=true; itemsTot+=c*ITEMS[k]; lines.push([t(ITEMKEYS[k])+" × "+c, money(c*ITEMS[k])]); }});
+  if(anyItem){
+    lines.push([hasLoad ? t("inv_items_add") : t("inv_items"), money(itemsTot)]);
+    if(hasLoad && lo!=null){ lo+=itemsTot; hi+=itemsTot; }
+    else if(!hasLoad && !needSize){ fixed=itemsTot; }
+    else if(needSize){ /* items priced, load still needs a size */ }
+  }
+  return {lines:lines, lo:lo, hi:hi, fixed:fixed, demo:demo, needSize:needSize, itemsTot:itemsTot, hasLoad:hasLoad};
+}
+function renderInvoice(){
+  var r=compute(), box=document.getElementById("invLines"), tot=document.getElementById("invTotal");
+  updateMeter();
+  var noEl=document.getElementById("invNo"); if(noEl) noEl.textContent=estNo;
+  if(r.demo && !r.hasLoad && !r.itemsTot){ box.innerHTML='<div class="row"><span>'+t("inv_demo")+'</span></div>'; tot.textContent="—"; return; }
+  if(!r.lines.length){ box.innerHTML='<div class="row"><span>'+t("inv_empty")+'</span></div>'; tot.textContent="—"; return; }
+  box.innerHTML = r.lines.map(function(l){ return '<div class="row"><span>'+l[0]+'</span><span>'+l[1]+'</span></div>'; }).join("");
+  if(r.demo){ box.innerHTML += '<div class="row"><span>'+t("inv_demo")+'</span></div>'; }
+  if(r.fixed!=null){ tot.textContent = money(r.fixed); }
+  else if(r.lo!=null){ tot.textContent = money(r.lo)+" – "+money(r.hi); }
+  else if(r.needSize && r.itemsTot){ tot.textContent = money(r.itemsTot)+" + …"; box.innerHTML += '<div class="row"><span>'+t("inv_picksize")+'</span></div>'; }
+  else { tot.textContent="—"; box.innerHTML += '<div class="row"><span>'+t("inv_picksize")+'</span></div>'; }
+}
+function receiptText(){
+  var r=compute(); var L=[];
+  L.push("DONOPOLY JUNK REMOVAL — "+t("inv_h").toUpperCase());
+  L.push(t("inv_no")+" "+estNo);
+  L.push("484-879-9272 · donopolyjr@gmail.com");
+  L.push("--------------------------------");
+  r.lines.forEach(function(l){ L.push(l[0]+"  "+l[1]); });
+  if(r.fixed!=null) L.push(t("inv_total")+": "+money(r.fixed));
+  else if(r.lo!=null) L.push(t("inv_total")+": "+money(r.lo)+" – "+money(r.hi));
+  var d=document.getElementById("desc").value.trim(); if(d) L.push("\n"+d);
+  L.push("\n"+t("inv_note"));
+  var n=document.getElementById("fName").value.trim(), p=document.getElementById("fPhone").value.trim(), a=document.getElementById("fAddr").value.trim();
+  if(n||p||a) L.push("\n"+n+" · "+p+"\n"+a);
+  var bd=document.getElementById("bkDate").value, bt=document.getElementById("bkTime").value;
+  if(bd||bt) L.push((lang==="es"?"Fecha y hora preferidas: ":"Preferred date & time: ")+bd+(bt?" · "+bt:""));
+  return L.join("\n");
+}
+function validForm(){
+  var ok = document.getElementById("fName").value.trim() && document.getElementById("fPhone").value.trim() && document.getElementById("fAddr").value.trim();
+  document.getElementById("formErr").style.display = ok ? "none" : "block";
+  return !!ok;
+}
+/* email that actually opens: Gmail compose in a new tab (works in any browser/app view);
+   if a popup is blocked, fall back to the device's mail app via a real link tap */
+function emailCompose(subject, body){
+  var url="https://mail.google.com/mail/?view=cm&fs=1&to=donopolyjr@gmail.com&su="+encodeURIComponent(subject)+"&body="+encodeURIComponent(body);
+  var w=null; try{ w=window.open(url,"_blank"); }catch(e){}
+  if(!w){
+    var a=document.createElement("a");
+    a.href="mailto:donopolyjr@gmail.com?subject="+encodeURIComponent(subject)+"&body="+encodeURIComponent(body);
+    document.body.appendChild(a); a.click(); a.remove();
+  }
+  toast(t("mail_open"));
+}
+function openSms(body){
+  var a=document.createElement("a");
+  a.href="sms:+14848799272?&body="+encodeURIComponent(body);
+  document.body.appendChild(a); a.click(); a.remove();
+}
+function fallbackCopy(txt){
+  var ta=document.createElement("textarea"); ta.value=txt; ta.style.position="fixed"; ta.style.opacity="0";
+  document.body.appendChild(ta); ta.select(); try{ document.execCommand("copy"); }catch(e){} ta.remove();
+}
+var copyBtn=document.getElementById("copyEmail");
+if(copyBtn){ copyBtn.addEventListener("click",function(){
+  var addr="donopolyjr@gmail.com";
+  function done(){ toast(t("ct_copied")); }
+  if(navigator.clipboard && navigator.clipboard.writeText){ navigator.clipboard.writeText(addr).then(done,function(){ fallbackCopy(addr); done(); }); }
+  else { fallbackCopy(addr); done(); }
+}); }
+document.getElementById("sendWa").addEventListener("click",function(){
+  if(!validForm()){ document.getElementById("fName").scrollIntoView({behavior:"smooth",block:"center"}); return; }
+  var chan=document.querySelector('input[name="chan"]:checked').value;
+  var txt = t("wa_intro")+"\n\n"+receiptText()+"\n\n"+t("chan_l")+" "+chan;
+  window.open("https://wa.me/14848799272?text="+encodeURIComponent(txt),"_blank");
+});
+document.getElementById("sendSms").addEventListener("click",function(){
+  if(!validForm()){ document.getElementById("fName").scrollIntoView({behavior:"smooth",block:"center"}); return; }
+  var txt = t("wa_intro")+"\n\n"+receiptText();
+  /* SMS to Donopoly's own number — texts land on Dorlyn's phone */
+  openSms(txt);
+});
+document.getElementById("sendEmail").addEventListener("click",function(){
+  if(!validForm()){ document.getElementById("fName").scrollIntoView({behavior:"smooth",block:"center"}); return; }
+  var subj = "Donopoly Junk Removal — "+t("inv_h")+" "+estNo;
+  var txt = t("wa_intro")+"\n\n"+receiptText();
+  emailCompose(subj, txt);
+});
+document.getElementById("dlBtn").addEventListener("click",function(){
+  var blob=new Blob([receiptText()],{type:"text/plain;charset=utf-8"});
+  var a=document.createElement("a"); a.href=URL.createObjectURL(blob); a.download="donopoly-estimate.txt"; document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(function(){URL.revokeObjectURL(a.href);},2000);
+});
+/* the send button that matches the chosen channel is highlighted */
+var CHANBTN={WhatsApp:"sendWa",Text:"sendSms",Email:"sendEmail"};
+function markChan(){ var c=document.querySelector('input[name="chan"]:checked').value;
+  ["sendWa","sendSms","sendEmail"].forEach(function(id){ document.getElementById(id).classList.toggle("picked", CHANBTN[c]===id); }); }
+document.querySelectorAll('input[name="chan"]').forEach(function(r){ r.addEventListener("change",markChan); });
+markChan();
+/* accept the estimate — confirms to Donopoly on the chosen channel */
+document.getElementById("acceptBtn").addEventListener("click",function(){
+  if(!validForm()){ document.getElementById("fName").scrollIntoView({behavior:"smooth",block:"center"}); return; }
+  var chan=document.querySelector('input[name="chan"]:checked').value;
+  var txt=t("accept_msg")+"\n\n"+receiptText();
+  this.classList.add("done"); this.textContent="✓ "+t("accept_done"); toast(t("accept_done"));
+  if(chan==="Email"){ emailCompose("Donopoly — "+t("accept_btn")+" "+estNo, txt); }
+  else if(chan==="Text"){ openSms(txt); }
+  else { window.open("https://wa.me/14848799272?text="+encodeURIComponent(txt),"_blank"); }
+});
+/* photos */
+document.getElementById("fileInput").addEventListener("change",function(e){
+  var th=document.getElementById("thumbs"); th.innerHTML=""; state.files=e.target.files.length;
+  var fc=document.getElementById("fileCount");
+  if(fc){ if(state.files>0){ fc.hidden=false; fc.textContent="✓ "+state.files+" "+t("file_sel"); } else { fc.hidden=true; } }
+  Array.prototype.forEach.call(e.target.files,function(f){
+    var url=URL.createObjectURL(f);
+    if(f.type.indexOf("video")===0){ var v=document.createElement("video"); v.src=url; v.muted=true; th.appendChild(v); }
+    else { var im=document.createElement("img"); im.src=url; im.alt=f.name; th.appendChild(im); }
+  });
+});
+/* voice dictation — continuous, with interim results and clear errors */
+var rec=null, recording=false, speechBase="";
+document.getElementById("micBtn").addEventListener("click",function(){
+  var SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+  if(!SR){ toast(t("mic_no")); return; }
+  if(recording && rec){ try{ rec.stop(); }catch(e){} return; }
+  var btn=document.getElementById("micBtn"), hint=document.getElementById("micHint");
+  try{ rec=new SR(); }catch(e){ toast(t("mic_no")); return; }
+  rec.lang = lang==="es" ? "es-US" : "en-US";
+  rec.continuous = true; rec.interimResults = true; rec.maxAlternatives = 1;
+  speechBase = document.getElementById("desc").value.trim();
+  rec.onresult=function(ev){
+    var txt="";
+    for(var i=0;i<ev.results.length;i++) txt += ev.results[i][0].transcript;
+    document.getElementById("desc").value = (speechBase ? speechBase+" " : "") + txt;
+  };
+  rec.onend=function(){ recording=false; btn.classList.remove("rec"); hint.hidden=true; };
+  rec.onerror=function(ev){
+    recording=false; btn.classList.remove("rec"); hint.hidden=true;
+    if(ev && ev.error==="not-allowed") toast(t("mic_denied"));
+    else if(ev && ev.error!=="aborted" && ev.error!=="no-speech") toast(t("mic_no"));
+  };
+  try{ rec.start(); recording=true; btn.classList.add("rec"); hint.hidden=false; }
+  catch(e){ toast(t("mic_no")); }
+});
+/* write-us-a-message form — goes straight to Donopoly only */
+function msgTextFull(){ var n=document.getElementById("msgName").value.trim(), m=document.getElementById("msgText").value.trim();
+  return t("msg_intro")+(n?"\n"+n:"")+"\n\n"+m; }
+document.getElementById("msgWa").addEventListener("click",function(){
+  if(!document.getElementById("msgText").value.trim()){ document.getElementById("msgText").focus(); return; }
+  window.open("https://wa.me/14848799272?text="+encodeURIComponent(msgTextFull()),"_blank");
+});
+document.getElementById("msgEmail").addEventListener("click",function(){
+  if(!document.getElementById("msgText").value.trim()){ document.getElementById("msgText").focus(); return; }
+  emailCompose("Donopoly — Website message / Mensaje del sitio", msgTextFull());
+});
+/* share */
+var SITE="https://donopolyjunkremoval.com";
+document.getElementById("shWa").href="https://wa.me/?text="+encodeURIComponent("Donopoly Junk Removal — "+SITE);
+document.getElementById("shFb").href="https://www.facebook.com/sharer/sharer.php?u="+encodeURIComponent(SITE);
+document.getElementById("shX").href="https://twitter.com/intent/tweet?text="+encodeURIComponent("Donopoly Junk Removal — junk removal & cleanouts in PA")+"&url="+encodeURIComponent(SITE);
+function toast(msg){ var el=document.getElementById("toast"); el.textContent=msg; el.style.display="block"; setTimeout(function(){el.style.display="none";},2600); }
+/* ---- video banner — Dorlyn's ONLY approved truck video (voz de mujer).
+       TO ADD A VIDEO LATER: add {src:"assets/FILE.mp4", poster:"assets/POSTER.jpg"} to VIDEOS ---- */
+var VIDEOS=[{src:"assets/video-camion.mp4",poster:"assets/video-camion-poster.jpg"}];
+var vidIdx=0, vidTimer=null;
+var vidStage=document.getElementById("vidStage"), vidDots=document.getElementById("vidDots");
+function vidFacade(v){
+  return '<img src="'+v.poster+'" alt="Donopoly Junk Removal — truck video / video del camión" loading="lazy"/>'
+    +'<button type="button" class="vidplay" aria-label="Play video / Reproducir video"><span><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span></button>';
+}
+function stopVidAuto(){ if(vidTimer){ clearInterval(vidTimer); vidTimer=null; } }
+function renderVid(){
+  vidStage.innerHTML="";
+  var d=document.createElement("div"); d.className="vidslide"; d.innerHTML=vidFacade(VIDEOS[vidIdx]);
+  vidStage.appendChild(d);
+  Array.prototype.forEach.call(vidDots.children,function(dt,j){ dt.classList.toggle("on", j===vidIdx); });
+}
+function showVid(i){ vidIdx=(i+VIDEOS.length)%VIDEOS.length; renderVid(); }
+if(VIDEOS.length>1){
+  VIDEOS.forEach(function(v,i){
+    var dot=document.createElement("button"); dot.type="button"; dot.setAttribute("aria-label","Video "+(i+1)); if(i===0) dot.className="on";
+    dot.addEventListener("click",function(){ stopVidAuto(); showVid(i); });
+    vidDots.appendChild(dot);
+  });
+} else {
+  document.getElementById("vidPrev").style.display="none";
+  document.getElementById("vidNext").style.display="none";
+  vidDots.style.display="none";
+}
+renderVid();
+vidStage.addEventListener("click",function(e){
+  var b=e.target && e.target.closest ? e.target.closest(".vidplay") : null;
+  if(!b) return;
+  stopVidAuto();
+  var v=VIDEOS[vidIdx], sl=b.parentNode;
+  sl.innerHTML='<video src="'+v.src+'" poster="'+v.poster+'" controls playsinline loop preload="metadata"></video>';
+  var vid=sl.querySelector("video");
+  if(vid && vid.play){ var pr=vid.play(); if(pr && pr.catch) pr.catch(function(){}); }
+});
+document.getElementById("vidPrev").addEventListener("click",function(){ stopVidAuto(); showVid(vidIdx-1); });
+document.getElementById("vidNext").addEventListener("click",function(){ stopVidAuto(); showVid(vidIdx+1); });
+if(VIDEOS.length>1 && !window.matchMedia("(prefers-reduced-motion: reduce)").matches){
+  vidTimer=setInterval(function(){ if(!document.hidden) showVid(vidIdx+1); },7000);
+}
+applyLang();
+})();
+</script>
+</body>
+</html>
